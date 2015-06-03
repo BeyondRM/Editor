@@ -26,7 +26,7 @@ local.properties
 # PDT-specific
 .buildpath
 
-# sbteclipse plugin 
+# sbteclipse plugin
 .target
 
 # TeXlipse plugin
@@ -61,6 +61,11 @@ dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
+
+
+### NetBeans Gradle Plugin ###
+.nb-gradle-properties
+.nb-gradle/
 
 
 ### Windows ###
