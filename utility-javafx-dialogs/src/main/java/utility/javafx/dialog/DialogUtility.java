@@ -22,7 +22,7 @@ public class DialogUtility {
   private DialogUtility() {
   }
 
-  private static synchronized void stageCreate(Window window, StageStyle style, String title) {
+  private static synchronized void stageCreate(Window window, StageStyle style, String title, int width) {
     DialogUtility.stageFinish();
     stage = new Stage(style);
     stage.initOwner(window);
@@ -39,10 +39,10 @@ public class DialogUtility {
 
   public static synchronized final void displayContent(Window window, String title, Scene scene) {
     DialogUtility.stageCreate(window,
-                             Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
-                                 ? StageStyle.UNIFIED
-                                 : StageStyle.UNDECORATED,
-                             title);
+                              Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
+                                  ? StageStyle.UNIFIED
+                                  : StageStyle.UNDECORATED,
+                              title, 256);
 
     stage.setScene(scene);
     stage.showAndWait();
@@ -51,10 +51,10 @@ public class DialogUtility {
 
   public static synchronized final void displayMessage(Window window, String title, String message) {
     DialogUtility.stageCreate(window,
-                             Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
-                                 ? StageStyle.UNIFIED
-                                 : StageStyle.UNDECORATED,
-                             title);
+                              Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
+                                  ? StageStyle.UNIFIED
+                                  : StageStyle.UNDECORATED,
+                              title, 256);
 
     Label label = new Label(message);
     Button button = new Button("Close");
@@ -70,10 +70,10 @@ public class DialogUtility {
 
   public static synchronized final void displayWizard(Window window, String title, WizardScene ws) {
     DialogUtility.stageCreate(window,
-                             Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
-                                 ? StageStyle.UNIFIED
-                                 : StageStyle.UNDECORATED,
-                             title);
+                              Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
+                                  ? StageStyle.UNIFIED
+                                  : StageStyle.UNDECORATED,
+                              title, 256);
 
     stage.setScene(ws);
     stage.showAndWait();
