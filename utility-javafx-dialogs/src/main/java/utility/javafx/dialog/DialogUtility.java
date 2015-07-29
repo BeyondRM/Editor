@@ -28,7 +28,7 @@ public class DialogUtility {
     stage.initOwner(window);
     stage.initModality(Modality.WINDOW_MODAL);
     stage.setTitle(title);
-    stage.setMinWidth(256);
+    stage.setMinWidth(width);
   }
 
   private static synchronized void stageFinish() {
