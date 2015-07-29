@@ -37,24 +37,24 @@ public class DialogUtility {
     }
   }
 
-  public static synchronized final void displayContent(Window window, String title, Scene scene) {
+  public static synchronized final void displayContent(Window window, String title, Scene scene, int width) {
     DialogUtility.stageCreate(window,
                               Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
                                   ? StageStyle.UNIFIED
                                   : StageStyle.UNDECORATED,
-                              title, 256);
+                              title, width);
 
     stage.setScene(scene);
     stage.showAndWait();
     DialogUtility.stageFinish();
   }
 
-  public static synchronized final void displayMessage(Window window, String title, String message) {
+  public static synchronized final void displayMessage(Window window, String title, String message, int width) {
     DialogUtility.stageCreate(window,
                               Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
                                   ? StageStyle.UNIFIED
                                   : StageStyle.UNDECORATED,
-                              title, 256);
+                              title, width);
 
     Label label = new Label(message);
     Button button = new Button("Close");
@@ -68,12 +68,12 @@ public class DialogUtility {
     DialogUtility.stageFinish();
   }
 
-  public static synchronized final void displayWizard(Window window, String title, WizardScene ws) {
+  public static synchronized final void displayWizard(Window window, String title, WizardScene ws, int width) {
     DialogUtility.stageCreate(window,
                               Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
                                   ? StageStyle.UNIFIED
                                   : StageStyle.UNDECORATED,
-                              title, 256);
+                              title, width);
 
     stage.setScene(ws);
     stage.showAndWait();
