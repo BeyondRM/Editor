@@ -60,6 +60,10 @@ public final class DialogUtility {
 
   /**
    * Display a Scene object. This instantiates a dialog window with the following parameters:
+   * @param window  A {@link Window} object, representing the parent window.
+   * @param title   A {@link String} object, representing the dialog title.
+   * @param scene   A {@link Scene} object, representing a displayable scene.
+   * @param width   An {@link Integer} value, representing the minimal width.
    * @see DialogUtility
    */
   public static synchronized final void displayContent(Window window, String title, Scene scene, int width) {
