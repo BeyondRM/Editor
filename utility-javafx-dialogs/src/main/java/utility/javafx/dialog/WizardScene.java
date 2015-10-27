@@ -12,7 +12,7 @@ abstract public class WizardScene extends Scene {
   private final WizardScenePage[] page;
   private final boolean showButtons;
 
-  public WizardScene(Scene sh, Scene sf, boolean showButtons, WizardScenePage... sp) {
+  public WizardScene(Scene sh, Scene sf, boolean showButtons, WizardScenePage[] sp) {
     super(null);
     head = sh;
     foot = sf;
@@ -20,15 +20,15 @@ abstract public class WizardScene extends Scene {
     page = sp;
   }
 
-  public final void clickWizardDoneExit() {
+  public void clickWizardDoneExit() {
   }
 
-  public final void clickWizardEscapeMe() {
+  public void clickWizardEscapeMe() {
   }
 
-  public final void clickWizardPageBack() {
+  public void clickWizardPageBack() {
   }
 
-  public final void clickWizardPageNext() {
+  public void clickWizardPageNext() {
   }
 }
