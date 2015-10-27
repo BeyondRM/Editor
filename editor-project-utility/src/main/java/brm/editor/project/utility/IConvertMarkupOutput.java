@@ -3,7 +3,6 @@ import java.io.File;
 
 
 /**
- * <h2>IConvertMarkupOutput</h2>
  * Convert to markup output.
  * @author Gregory
  * @see #markupOutputSource markupOutputSource
