@@ -14,10 +14,17 @@ import javafx.stage.Window;
 
 /**
  * A static dialog handler.
- * @author Gregory <gregory.cheyney@gmail.com>
+ * @author Gregory
  */
 public final class DialogUtility {
   private static volatile Stage stage;
+  private static volatile StageStyle stageStyle;
+
+  static {
+    stageStyle = Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
+        ? StageStyle.UNIFIED
+        : StageStyle.UNDECORATED;
+  }
 
   /**
    * A private constructor.
@@ -60,17 +67,15 @@ public final class DialogUtility {
 
   /**
    * Display a Scene object. This instantiates a dialog window with the following parameters:
-   * @param window  A {@link Window} object, representing the parent window.
-   * @param title   A {@link String} object, representing the dialog title.
-   * @param scene   A {@link Scene} object, representing a displayable scene.
-   * @param width   An {@link Integer} value, representing the minimal width.
+   * @param window A {@link Window} object, representing the parent window.
+   * @param title  A {@link String} object, representing the dialog title.
+   * @param scene  A {@link Scene} object, representing a displayable scene.
+   * @param width  An {@link Integer} value, representing the minimal width.
    * @see DialogUtility
    */
   public static synchronized final void displayContent(Window window, String title, Scene scene, int width) {
     DialogUtility.stageCreate(window,
-                              Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
-                                  ? StageStyle.UNIFIED
-                                  : StageStyle.UNDECORATED,
+                              stageStyle,
                               title, width);
 
     stage.setScene(scene);
@@ -88,9 +93,7 @@ public final class DialogUtility {
    */
   public static synchronized final void displayMessage(Window window, String title, String message, int width) {
     DialogUtility.stageCreate(window,
-                              Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
-                                  ? StageStyle.UNIFIED
-                                  : StageStyle.UNDECORATED,
+                              stageStyle,
                               title, width);
 
     Label label = new Label(message);
@@ -116,9 +119,7 @@ public final class DialogUtility {
    */
   public static synchronized final void displayWizard(Window window, String title, WizardScene scene, int width) {
     DialogUtility.stageCreate(window,
-                              Platform.isSupported(ConditionalFeature.UNIFIED_WINDOW)
-                                  ? StageStyle.UNIFIED
-                                  : StageStyle.UNDECORATED,
+                              stageStyle,
                               title, width);
 
     stage.setScene(scene);

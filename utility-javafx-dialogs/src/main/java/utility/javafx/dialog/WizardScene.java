@@ -4,7 +4,7 @@ import javafx.scene.Scene;
 
 /**
  * A stage for wizard-style dialogs. This allows instantiating a list of scenes to be used as content-pages.
- * @author Gregory <gregory.cheyney@gmail.com>
+ * @author Gregory
  */
 abstract public class WizardScene extends Scene {
   private final Scene foot;
