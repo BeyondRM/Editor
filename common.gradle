@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-  compile 'abc.core:abc-errorlogs:0.1'
+  compile 'abc.core:abc-errorlogs:0.2'
   testCompile 'junit:junit:4.10'
 }
 
