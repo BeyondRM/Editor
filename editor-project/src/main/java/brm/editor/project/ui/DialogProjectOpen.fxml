@@ -10,7 +10,7 @@
 <?scenebuilder-preview-i18n-resource ../i18n/Bundle.properties?>
 <?scenebuilder-stylesheet appstyle.css?>
 
-<AnchorPane styleClass="Dialog" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.project.ui.DialogProjectOpen">
+<AnchorPane styleClass="Dialog" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.project.ui.DialogProjectOpen">
   <children>
     <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <children>
