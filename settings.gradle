@@ -1,2 +1,9 @@
 //
-
+include\
+':editor',\
+':editor-engine-test',\
+':editor-project', \
+':editor-project-port-orm',\
+':editor-project-utility',\
+':editor-tools-spriter',\
+'utility-javafx-dialogs'

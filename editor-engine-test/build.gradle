@@ -1,0 +1,14 @@
+//
+dependencies {
+  // The Archival and Platform project dependencies:
+  compile 'beyondrm.archival:platform-data-variables:0.2'
+  compile 'beyondrm.archival:platform-graphics-abstract:0.2'
+  compile 'beyondrm.archival:platform-graphics-animations:0.2'
+  compile 'beyondrm.platform:platform-media-sounds:0.2'
+  // The Engine project dependencies:
+  //compile project(':engine-common')
+  //compile project(':engine-configuration')
+  //compile project(':engine-system')
+  //compile project(':engine-system-battling')
+  //compile project(':engine-system-crafting')
+}

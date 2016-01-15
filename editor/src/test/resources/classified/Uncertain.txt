@@ -1,0 +1,14 @@
+These following items from the Wikia list, I will view as "Uncertain" by the fact that they are not within the range of
+what I am attempting -- such as, "I am coding in Java, not Ruby"; or, "my projects will not require this".
+______________________________________________________________________________
+
+--  Not sure if this is a singular objective for my work; both editor and engine will be far more extensible already. I
+    do not think I want to go the extra mile to make a "plugin API", as it were. #61 is like #1 in that I generally do
+    want to provide better visual customizations to all screens; and that allowing for more than just the default "RPG
+    Maker" style of main menus would be a good thing...
+______________________________________________________________________________
+
+
+15. Setup Priorities
+
+

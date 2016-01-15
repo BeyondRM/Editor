@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-preview-i18n-resource ../../i18n/Bundle.properties?>
+<?scenebuilder-stylesheet ../../appstyle.css?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.database.variables.Variables">
+  <children>
+    <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox>
+          <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="LabelH2" text="Floats" />
+            <ListView />
+          </children>
+        </VBox>
+        <Separator orientation="VERTICAL" />
+        <VBox HBox.hgrow="ALWAYS">
+          <children>
+            <HBox>
+              <children>
+                <Label text="Name:" />
+                <TextField />
+              </children>
+            </HBox>
+            <Label text="Value:" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../appstyle.css" />
+  </stylesheets>
+</fx:root>

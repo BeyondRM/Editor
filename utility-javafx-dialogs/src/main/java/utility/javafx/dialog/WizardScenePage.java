@@ -3,7 +3,7 @@ package utility.javafx.dialog;
 
 /**
  * A wizard scene page definition.
- * @author Gregory <gregory.cheyney@gmail.com>
+ * @author Gregory
  */
 public interface WizardScenePage {
   int pageBack = -1;

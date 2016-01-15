@@ -1,5 +1,8 @@
 package brm.editor.project.utility;
 import java.io.File;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 
 /**
@@ -22,8 +25,11 @@ abstract public class AEditorProjectDataXML extends AEditorProject {
    * @param f A {@link File} object, representing the root directory to start.
    * @param s A {@link String} object, representing the actual XML file name.
    * @param b A {@link Boolean} condition, representing whether to parse nodes.
+   * @throws ParserConfigurationException cannot create builder from factory instance.
+   * @throws SAXException                 the SAX engine cannot parse the document.
+   * @throws IOException                  problem with file input-output or access.
    */
-  public AEditorProjectDataXML(File f, String s, boolean b) {
+  public AEditorProjectDataXML(File f, String s, boolean b) throws ParserConfigurationException, SAXException, IOException {
     this(new File(f, s), b);
   }
 
@@ -37,8 +43,11 @@ abstract public class AEditorProjectDataXML extends AEditorProject {
    * {@link #rootnodeName rootnodeName}.
    * @param f A {@link File} object, representing the actual XML file.
    * @param b A {@link Boolean} condition, representing whether to parse nodes.
+   * @throws ParserConfigurationException cannot create builder from factory instance.
+   * @throws SAXException                 the SAX engine cannot parse the document.
+   * @throws IOException                  problem with file input-output or access.
    */
-  public AEditorProjectDataXML(File f, boolean b) {
+  public AEditorProjectDataXML(File f, boolean b) throws ParserConfigurationException, SAXException, IOException {
     super(f, "");
   }
 }

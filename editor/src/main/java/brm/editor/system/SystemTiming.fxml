@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-preview-i18n-resource ../i18n/Bundle.properties?>
+<?scenebuilder-stylesheet ../appstyle.css?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="brm.editor.system.SystemTiming">
+  <children>
+    <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox>
+          <children>
+            <Label maxWidth="1.7976931348623157E308" text="Label" />
+            <ListView prefHeight="-1.0" prefWidth="-1.0" />
+          </children>
+        </VBox>
+        <HBox id="HBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <fx:include source="timing/TimingBaseAttr.fxml" />
+          </children>
+        </HBox>
+        <VBox id="VBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <fx:include source="timing/TimingFormatting.fxml" />
+            <HBox id="HBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <fx:include source="timing/TimingMonths.fxml" />
+                <fx:include source="timing/TimingWeekdays.fxml" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../appstyle.css" />
+  </stylesheets>
+</fx:root>

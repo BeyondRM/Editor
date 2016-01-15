@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-preview-i18n-resource ../../i18n/Bundle.properties?>
+<?scenebuilder-stylesheet ../../appstyle.css?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" styleClass="InfoPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.system.timing.Timing">
+  <children>
+    <VBox id="VBox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label maxWidth="1.7976931348623157E308" styleClass="LabelH1" text="Week-Day Names" />
+        <TableView>
+          <columns>
+            <TableColumn maxWidth="20.0" minWidth="20.0" prefWidth="20.0" text="#" />
+            <TableColumn maxWidth="50.0" minWidth="35.0" prefWidth="35.0" text="Abbr" />
+            <TableColumn maxWidth="100.0" minWidth="40.0" prefWidth="80.0" text="Full Name" />
+            <TableColumn maxWidth="400.0" minWidth="100.0" prefWidth="100.0" text="Specials" />
+          </columns>
+        </TableView>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../appstyle.css" />
+  </stylesheets>
+</fx:root>

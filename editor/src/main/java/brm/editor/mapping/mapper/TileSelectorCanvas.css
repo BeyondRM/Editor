@@ -1,0 +1,53 @@
+
+.root {
+}
+
+.combo-box {
+  -fx-background-color: linear-gradient(blue,white,blue);
+}
+.combo-box:hover {
+  -fx-background-color: linear-gradient(black,darkblue,blue,lightblue,palegoldenrod,lightblue,blue,darkblue,black);
+}
+.combo-box .list-view:even {
+  -fx-background-color: palegoldenrod;
+}
+.combo-box .list-view:hover {
+  -fx-background-color: lightgreen;
+}
+.combo-box .list-view:odd {
+  -fx-background-color: palegreen;
+}
+.combo-box .list-view:selected {
+  -fx-background-color: green;
+}
+
+.scroll-pane {
+  -fx-hbar-policy: never;
+  -fx-vbar-policy: always;
+}
+.scroll-pane .viewport {
+  -fx-background-image: url("checkerboard.png");
+}
+
+#canvas {
+  -fx-max-height: 1024.0;
+  -fx-max-width: 256.0;
+  -fx-min-height: 64.0;
+  -fx-min-width: 256.0;
+}
+
+#mappable {
+}
+
+#VBox {
+  -fx-alignment: CENTER_LEFT;
+  -fx-max-height: PREFERRED_HEIGHT;
+  -fx-padding: 2;
+  -fx-spacing: 4;
+}
+
+GridPane {
+  -fx-padding: 2;
+  -fx-hgap: 4;
+  -fx-vgap: 2;
+}

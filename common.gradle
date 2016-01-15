@@ -2,8 +2,8 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 
-String mavenGroupId = 'beyondrm.editor'
-String mavenVersion = '0.1'
+String mavenGroupId = rootProject.group
+String mavenVersion = rootProject.version
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-  compile 'abc.core:abc-errorlogs:0.1'
+  compile 'abc.core:abc-errorlogs:0.2'
   testCompile 'junit:junit:4.10'
 }
 

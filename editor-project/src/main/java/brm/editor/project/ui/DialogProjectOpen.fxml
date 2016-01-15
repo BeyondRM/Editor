@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?scenebuilder-preview-i18n-resource ../i18n/Bundle.properties?>
+<?scenebuilder-stylesheet appstyle.css?>
+
+<AnchorPane styleClass="Dialog" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.project.ui.DialogProjectOpen">
+  <children>
+    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox>
+          <children>
+            <Label styleClass="LabelH2" maxWidth="1.7976931348623157E308" text="Project Path" VBox.vgrow="NEVER" />
+            <HBox maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+              <children>
+                <TextField HBox.hgrow="ALWAYS" />
+                <Button mnemonicParsing="false" text="Button" HBox.hgrow="NEVER" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <HBox VBox.vgrow="ALWAYS">
+          <children>
+            <VBox HBox.hgrow="ALWAYS">
+              <children>
+                <Label styleClass="LabelH2" maxWidth="1.7976931348623157E308" text="Project List" />
+                <ListView />
+              </children>
+            </VBox>
+            <VBox id="VBoxSidebar" maxHeight="1.7976931348623157E308">
+              <children>
+                <Button defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Open" />
+                <Button cancelButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cancel" />
+                <Separator VBox.vgrow="NEVER" />
+                <Button disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Rename" />
+                <Button disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Delete" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@appstyle.css" />
+  </stylesheets>
+</AnchorPane>

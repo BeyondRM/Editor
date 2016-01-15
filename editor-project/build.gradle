@@ -1,0 +1,6 @@
+//
+dependencies {
+  compile 'beyondrm.archival:platform-data-variables:0.2'
+  compile project(':editor-project-port-orm')
+  compile project(':editor-project-utility')
+}

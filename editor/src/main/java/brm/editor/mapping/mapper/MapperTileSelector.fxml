@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-preview-i18n-resource ../../i18n/Bundle.properties?>
+<?scenebuilder-stylesheet ../../appstyle.css?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.mapping.mapper.MapperTileSelector">
+   <children>
+      <VBox stylesheets="@TileSelectorCanvas.css">
+        <children>
+          <GridPane>
+            <columnConstraints>
+              <ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+            </columnConstraints>
+            <rowConstraints>
+              <RowConstraints valignment="BASELINE" vgrow="NEVER" />
+              <RowConstraints valignment="BASELINE" vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+              <Label fx:id="label1" text="Tileset:" />
+              <ComboBox fx:id="combo1" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
+              <Label fx:id="label2" text="Sheet:" GridPane.rowIndex="1" />
+              <ComboBox fx:id="combo2" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+          </GridPane>
+          <ScrollPane fx:id="scrollPane" fitToWidth="true" prefViewportWidth="256.0">
+            <content>
+              <Canvas fx:id="canvas" height="1024.0" onMouseClicked="#onCanvasMouseClicked" width="256.0" />
+            </content>
+          </ScrollPane>
+        </children>
+      </VBox>
+   </children>
+  <stylesheets>
+    <URL value="@../../appstyle.css" />
+  </stylesheets>
+</fx:root>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-preview-i18n-resource ../i18n/Bundle.properties?>
+<?scenebuilder-stylesheet ../appstyle.css?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.database.DatabaseVariables">
+  <children>
+    <TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="Array-Booleans">
+          <content>
+            <fx:include source="variables/VariableArrayBooleans.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Array-Bytes">
+          <content>
+            <fx:include source="variables/VariableArrayBytes.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Array-Doubles">
+          <content>
+            <fx:include source="variables/VariableArrayDoubles.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Array-Floats">
+          <content>
+            <fx:include source="variables/VariableArrayFloats.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Array-Integers">
+          <content>
+            <fx:include source="variables/VariableArrayIntegers.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Array-Longs">
+          <content>
+            <fx:include source="variables/VariableArrayLongs.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Array-Strings">
+          <content>
+            <fx:include source="variables/VariableArrayStrings.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Booleans">
+          <content>
+            <fx:include source="variables/VariableBooleans.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Bytes">
+          <content>
+            <fx:include source="variables/VariableBytes.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Doubles">
+          <content>
+            <fx:include source="variables/VariableDoubles.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Floats">
+          <content>
+            <fx:include source="variables/VariableFloats.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Integers">
+          <content>
+            <fx:include source="variables/VariableIntegers.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Longs">
+          <content>
+            <fx:include source="variables/VariableLongs.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Strings">
+          <content>
+            <fx:include source="variables/VariableStrings.fxml" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+  <stylesheets>
+    <URL value="@../appstyle.css" />
+  </stylesheets>
+</fx:root>

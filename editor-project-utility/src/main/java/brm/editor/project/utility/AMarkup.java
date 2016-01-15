@@ -1,5 +1,4 @@
 package brm.editor.project.utility;
-import abc.errorlogs.log.AbcLogger;
 import java.io.File;
 import java.io.IOException;
 import javax.xml.parsers.DocumentBuilder;
@@ -13,11 +12,9 @@ import org.xml.sax.SAXException;
 
 
 /**
- * <h2>AMarkup</h2>
  * A platform markup definition. This abstract class defines fields and methods for initializing a markup-handling base
- * methodology. It is used in reading XML files for their content, and beginning the parsing of the sub-nodes.
- * <p/>
- * Fields will generally be instantiated in the constructor, via the following order:
+ * methodology. It is used in reading XML files for their content, and for beginning the parsing of child-nodes. Fields
+ * will generally be instantiated in the constructor, via the following order:
  * <ol>
  * <li/>{@link #xmldoc xmldoc} &mdash; the file reference equating to where the XML document is located, physically.
  * <li/>{@link #builder builder} &mdash; the document builder object, which is used to "parse" the XML File object.
@@ -28,7 +25,6 @@ import org.xml.sax.SAXException;
  * <li/>{@link #attributes attributes} &mdash; a list of attribute nodes in the root node of the XML document.
  * <li/>{@link #nodeList nodeList} &mdash; the list of child-nodes obtainable from the root document node.
  * </ol>
- * <p/>
  * If things have worked correctly, none of the above should be null, or have empty values; the value of boolean field
  * {@link #loadedSafely loadedSafely} is the direct result of checking these things, at the end of the constructor.
  * @author Gregory
@@ -102,35 +98,23 @@ abstract public class AMarkup {
    * </pre>
    * @param f
    * @param s
+   * @throws ParserConfigurationException cannot create builder from factory instance.
+   * @throws SAXException                 the SAX engine cannot parse the document.
+   * @throws IOException                  problem with file input-output or access.
    */
-  public AMarkup(File f, String s) {
+  public AMarkup(File f, String s) throws ParserConfigurationException, SAXException, IOException {
     xmldoc = f;
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-    String message;
-    try {
-      builder = factory.newDocumentBuilder();
-      document = builder.parse(xmldoc);
-      //The above is okay for external xml; but for included files, use:
-      //  builder.parse(AEditorProject.class.getResourceAsStream("relative/path/in/jar/YourXmlFile.xml"))
-      document.normalize();
-      rootnodeNode = document.getDocumentElement();
-      rootnodeName = rootnodeNode.getNodeName();
-      AbcLogger.logThis(AbcLogger.L3, String.format(FORMAT_ROOTNODE, rootnodeName));
-      attributes = getAttributes(rootnodeNode);
-      nodeList = getChildNodes();
-      AbcLogger.logThis(AbcLogger.L3, "==========================");
-    } catch(ParserConfigurationException ex) {
-      message = "ParserConfigurationException - problem creating builder from factory instance.";
-      AbcLogger.logThis(AbcLogger.L1, message, ex);
-    } catch(SAXException ex) {
-      message = "SAXException - problem with SAX parsing the document.";
-      AbcLogger.logThis(AbcLogger.L1, message, ex);
-    } catch(IOException ex) {
-      message = "IOException - problem with file-io; does the xml doc exist?";
-      AbcLogger.logThis(AbcLogger.L1, message, ex);
-    } finally {
-      loadedSafely = document != null && document.getDocumentElement() != null;
-    }
+    builder = factory.newDocumentBuilder();
+    document = builder.parse(xmldoc);
+    //The above is okay for external xml; but for included files, use:
+//  document = builder.parse(AEditorProject.class.getResourceAsStream("relative/path/in/jar/YourXmlFile.xml"))
+    document.normalize();
+    rootnodeNode = document.getDocumentElement();
+    rootnodeName = rootnodeNode.getNodeName();
+    attributes = getAttributes(rootnodeNode);
+    nodeList = getChildNodes();
+    loadedSafely = document != null && document.getDocumentElement() != null;
   }
 
   /**

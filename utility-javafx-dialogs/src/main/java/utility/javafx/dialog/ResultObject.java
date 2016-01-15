@@ -4,7 +4,7 @@ package utility.javafx.dialog;
 /**
  * <h2>ResultObject</h2>
  * something
- * @author Gregory <gregory.cheyney@gmail.com>
+ * @author Gregory
  */
 public class ResultObject {
 }

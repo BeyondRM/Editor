@@ -1,12 +1,14 @@
 package brm.editor.project.utility;
 import java.io.File;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 
 /**
- * <h2>AEditorProject</h2>
  * An editor project definition. This abstract class defines fields for whether the project data is changed, loaded, or
  * saved; getter and setter methods for the fields; and handler methods to process when project data is built, closed,
  * exported, imported, new, opened, saved, and saved as something else.
@@ -52,7 +54,7 @@ abstract public class AEditorProject extends AMarkup {
    */
   protected boolean projectDataSaved = false;
 
-  public AEditorProject(File f, String s) {
+  public AEditorProject(File f, String s) throws ParserConfigurationException, SAXException, IOException {
     super(f, s);
   }
 
