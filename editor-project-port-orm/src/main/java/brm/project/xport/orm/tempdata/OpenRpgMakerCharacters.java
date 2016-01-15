@@ -1,6 +1,9 @@
 package brm.project.xport.orm.tempdata;
 import brm.editor.project.utility.AEditorProject;
 import java.io.File;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 
 /**
@@ -61,11 +64,11 @@ public class OpenRpgMakerCharacters extends AEditorProject {
   // customAI
   //   ... (TODO: need to set this in a project to see what it does....
 
-  public OpenRpgMakerCharacters() {
+  public OpenRpgMakerCharacters() throws ParserConfigurationException, SAXException, IOException {
     this(null);
   }
 
-  public OpenRpgMakerCharacters(File file) {
+  public OpenRpgMakerCharacters(File file) throws ParserConfigurationException, SAXException, IOException {
     super(file, "");
   }
 

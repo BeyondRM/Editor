@@ -3,6 +3,9 @@ import brm.editor.project.utility.AEditorProject;
 import brm.editor.project.utility.IConvertMarkupInput;
 import brm.editor.project.utility.IConvertMarkupOutput;
 import java.io.File;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 
 /**
@@ -23,7 +26,7 @@ public class ProjectDataXml extends AEditorProject implements IConvertMarkupInpu
   public int selectedmap;
 
   //  ... all maps in the hierarchy have the following attributes: int id, String name, boolean expanded
-  public ProjectDataXml(File f) {
+  public ProjectDataXml(File f) throws ParserConfigurationException, SAXException, IOException {
     super(f, "");
   }
 

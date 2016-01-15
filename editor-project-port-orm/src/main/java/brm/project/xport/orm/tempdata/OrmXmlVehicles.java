@@ -1,6 +1,9 @@
 package brm.project.xport.orm.tempdata;
 import brm.editor.project.utility.AEditorProject;
 import java.io.File;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 
 /**
@@ -21,7 +24,7 @@ public class OrmXmlVehicles extends AEditorProject {
   public double speed;     // the playback speed
   public double fadeInTime;// the fade-in time
 
-  public OrmXmlVehicles(File f) {
+  public OrmXmlVehicles(File f) throws ParserConfigurationException, SAXException, IOException {
     super(f, "");
     name = attributes.getNamedItem("name").getNodeValue();
     sprite = Integer.getInteger(attributes.getNamedItem("sprite").getNodeValue());

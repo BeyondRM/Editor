@@ -4,7 +4,10 @@ import brm.editor.project.utility.IConvertMarkupInput;
 import brm.editor.project.utility.IConvertMarkupOutput;
 import brm.project.xport.orm.tempdata.OrmXmlVehicles;
 import java.io.File;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Node;
+import org.xml.sax.SAXException;
 
 
 /**
@@ -26,7 +29,7 @@ public class VehicleDataXml extends AEditorProject implements IConvertMarkupInpu
   private int fadeInTime;
   private boolean retainPitch;
 
-  public VehicleDataXml(File file) {
+  public VehicleDataXml(File file) throws ParserConfigurationException, SAXException, IOException {
     super(file, "");
     name = attributes.getNamedItem("name").getLocalName();
     sprite = Integer.getInteger(attributes.getNamedItem("sprite").getLocalName());

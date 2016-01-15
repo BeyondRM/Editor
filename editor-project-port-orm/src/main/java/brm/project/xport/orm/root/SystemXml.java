@@ -3,6 +3,9 @@ import brm.editor.project.utility.AEditorProject;
 import brm.editor.project.utility.IConvertMarkupInput;
 import brm.editor.project.utility.IConvertMarkupOutput;
 import java.io.File;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 
 /**
@@ -60,7 +63,7 @@ public class SystemXml extends AEditorProject implements IConvertMarkupInput, IC
 
   //phases:
   //  ... a listing of each defined phase (defaults to 24, the first 9 are specifically named)
-  public SystemXml(File f) {
+  public SystemXml(File f) throws ParserConfigurationException, SAXException, IOException {
     super(f, "");
   }
 
