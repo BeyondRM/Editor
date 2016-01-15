@@ -1,0 +1,338 @@
+.ButtonPane {
+  -fx-background-color:linear-gradient(black,darkgoldenrod,goldenrod,gold,palegoldenrod,khaki,khaki,palegoldenrod,gold,goldenrod,darkgoldenrod,black);
+  -fx-padding:16 8 16 2;
+}
+.Dialog {
+  -fx-background-color:lightgoldenrodyellow;
+  -fx-font-size:11pt;
+  -fx-padding:4px;
+}
+.DialogHead {
+  -fx-font-size:11pt;
+  -fx-padding:4px;
+}
+.DialogNavs {
+  -fx-font-size:11pt;
+  -fx-padding:4px;
+}
+.Gender {
+  -fx-alignment:top-left;
+  -fx-padding:8;
+  -fx-spacing:6;
+}
+.GridPaneButtonEvents {
+  -fx-column-halignment:center;
+  -fx-fit-to-width:true;
+  -fx-hgap:10;
+  -fx-row-valignment:center;
+  -fx-vgap:8;
+}
+.GridPaneButtonEvents .button {
+  -fx-background-color:linear-gradient(blue,white,white,blue);
+}
+.GridPaneButtonEvents .button .text {
+  -fx-padding:2px 4px 2px 4px;
+}
+.HBoxButtonBar {
+  -fx-alignment:CENTER_LEFT;
+  -fx-background-color:transparent;
+  -fx-spacing:8;
+}
+
+// The LabelH1, for headings level 1
+.LabelH1 {
+  -fx-alignment:center;
+  -fx-background-color:linear-gradient(black,navy,darkblue,blue,lightblue,lightblue,blue,darkblue,navy,black);
+  -fx-border-radius:5px 5px 0px 0px;
+  -fx-font:18pt Tahoma;
+  -fx-padding:8px;
+}
+.LabelH1 .text {
+  -fx-effect:dropshadow(gaussian,black,4,1,0.5,2);
+  -fx-fill:gold;
+  -fx-padding:4px;
+}
+// The LabelH2, for headings level 2
+.LabelH2 {
+  -fx-alignment:top-center;
+  -fx-background-color:linear-gradient(navy,darkblue,black);
+  -fx-font:16pt Tahoma;
+  -fx-padding:4 8 4 4;
+}
+.LabelH2 .text {
+  -fx-background-insets:4 8 4 4;
+  -fx-effect:dropshadow(gaussian,black,8,0.5,2,1);
+  -fx-fill:gold;
+}
+// The LabelH3, for headings level 3
+.LabelH3 {
+  -fx-alignment:top-center;
+  -fx-background-color:linear-gradient(darkblue,blue,navy);
+  -fx-effect:dropshadow(gaussian,darkgray,8,0.5,2,1);
+  -fx-font:15pt Tahoma;
+  -fx-padding:3 6 3 3;
+}
+.LabelH3 .text {
+  -fx-fill:blanchedalmond;
+}
+// The LabelH4, for headings level 4
+.LabelH4 {
+  -fx-background-color:linear-gradient(blue,lightblue,lightgray,white,lightgray,lightblue,blue);
+  -fx-padding:2 4 2 2;
+}
+.LabelH4 .text {
+  -fx-fill:linear-gradient(goldenrod,gold,orangered);
+  -fx-effect:dropshadow(gaussian,indigo,2,0.85,1,1);
+  -fx-font:13pt Tahoma;
+}
+
+.LabelRotate {
+  -fx-font:13pt "System";
+  -fx-rotate:-90;
+  -fx-wrap-text: true;
+  -fx-text-fill:green;
+  -fx-effect:dropshadow(gaussian,black,2,1,0.5,2);
+}
+.StatusBar {
+  -fx-alignment:center-left;
+  -fx-background-color:linear-gradient(darkgreen,green,lightgreen,palegoldenrod,lightgreen,green,black);
+  -fx-padding:6px;
+  -fx-spacing:4px;
+}
+.StatusBar .text-field {
+  -fx-border-insets:5 7 8 9;
+  -fx-border-radius:9 8 6 4;
+  -fx-focus-traversable:false;
+  -fx-opacity:0.5;
+}
+.StatusBar .text-field .text {
+  -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,2);
+  -fx-prompt-text-fill:tomato;
+}
+
+.root {
+  -fx-font:10pt Tahoma;
+}
+.button {
+  -fx-background-color:linear-gradient(navy,lightblue,white,lightblue,black);
+  -fx-background-radius:6px;
+}
+.button:default {
+  -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+  -fx-font:bold 10pt Tahoma;
+  -fx-text-fill:navy;
+}
+.button:disabled {
+  -fx-background-color:linear-gradient(gray,pink,deeppink,firebrick,deeppink,pink,gray);
+}
+.button:hover {
+  -fx-scale-x:1.125;
+  -fx-scale-y:1.0625;
+  -fx-background-color:linear-gradient(darkgreen,lightgreen,white,lightgreen,darkgreen);
+}
+.button .text {
+  -fx-padding:4px 8px 4px 8px;
+}
+.list-view:vertical {
+  -fx-hbar-policy: as-needed;
+  -fx-vbar-policy: always;
+}
+
+.list-view:vertical .list-cell:even {
+  -fx-background-color:white;
+}
+.list-view:vertical .list-cell:odd {
+  -fx-background-color:aliceblue;
+}
+.menu-item:default {
+  -fx-background-color:burlywood;
+}
+.menu-item:focused {
+  -fx-background-color:aliceblue;
+}
+.menu-item:focused .label {
+  -fx-text-fill:darkblue;
+}
+.separator:vertical {
+  -fx-padding:0 4 0 4;
+}
+.separator:vertical .line {
+  -fx-background-color:linear-gradient(greenyellow,paleturquoise,paleturquoise,greenyellow);
+  -fx-background-radius:1;
+}
+.split-pane:horizontal {
+}
+.split-pane:horizontal #AnchorPane {
+  -fx-background-color:linear-gradient(blue,lightblue,darkblue);
+}
+.tab {
+  -fx-background-color:linear-gradient(blue,lightblue,white,lightblue,black);
+  -fx-background-insets:2px 1px 0px 0px;
+}
+.tab:top:disabled {
+  -fx-background-color:linear-gradient(darkred,red,pink,white,pink,red,firebrick);
+}
+.tab:top:disabled:hover {
+  -fx-background-color:linear-gradient(darkgray,gray,lightgray,white,lightgray,gray,black);
+}
+.tab:top:disabled .tab-label {
+  -fx-effect:dropshadow(three-pass-box,darkgray,5,0.0,0,1);
+  -fx-text-fill:brown;
+  -fx-scale-x:0.9;
+  -fx-scale-x:0.95;
+}
+.tab:top:hover {
+  -fx-background-color:linear-gradient(darkgreen,green,white,cornflowerblue,white,green,black);
+  -fx-background-radius:6px 6px 0px 0px,4px 4px 0px 0px,2px 2px 0px 0px;
+}
+.tab:top:hover .tab-label {
+  -fx-effect:dropshadow(three-pass-box,black,5,0.0,0,1);
+  -fx-text-fill:navy;
+  -fx-scale-x:1.1;
+  -fx-scale-x:1.05;
+}
+.tab:top:selected {
+  -fx-background-color:linear-gradient(green,lightgreen,white,lightgreen,green);
+  -fx-background-radius:6px 6px 0px 0px,4px 4px 0px 0px,2px 2px 0px 0px;
+}
+.tab:top:selected .tab-label {
+}
+.tab:top:selected .tab-label .text {
+  -fx-fill:black;
+}
+.tab-pane {
+  -fx-background-color:linear-gradient(white,lightsteelblue,steelblue,blanchedalmond);
+  -fx-padding:4px;
+}
+.tab-pane:top .tab-content-area {
+  -fx-border-color:darkgray;
+  -fx-border-radius:2;
+}
+.tab-pane:top .tab-header-area .tab-header-background {
+  -fx-background-color:transparent;
+}
+.table-view:row-selection {
+  -fx-table-cell-border-style:dashed;
+}
+.table-view .column-header {
+  width:min-content;
+}
+.table-view .column-header:first-child {
+  width:min-content;
+}
+.table-view .column-header:default .label .text {
+  -fx-align:right;
+}
+.table-view .column-header:last-child {
+  width:available;
+}
+.tool-bar:horizontal {
+  -fx-background-color:linear-gradient(black,darkgray,darkslategray,black);
+}
+.tooltip {
+  -fx-wrap-text:true;
+}
+.vbox {
+  -fx-border-color:darkgrey;
+  -fx-border-width:1px;
+  -fx-alignment:top-left;
+}
+.vbox-inner {
+  -fx-border-color:grey;
+  -fx-border-width:1px;
+  -fx-border-insets:4px 4px 4px 4px;
+}
+.web-view {
+}
+.radio-button {
+}
+
+#GridPane {
+  -fx-hgap:4;
+  -fx-vgap:4;
+}
+#HBoxButtonBar {
+  -fx-spacing:8px;
+}
+#PanelRoundedCorners {
+  -fx-border-color:cornflowerblue;
+  -fx-border-radius:4;
+  -fx-border-style:solid;
+}
+#TabContent {
+  -fx-padding:4px;
+}
+#ToolbarButton {
+  -fx-alignment:center;
+  -fx-font-size:9pt;
+  -fx-graphic-text-gap:0px;
+  -fx-padding:0.25em;
+}
+#VBoxSidebar {
+  -fx-padding:0px 4px 4px 4px;
+  -fx-spacing:4px;
+}
+
+.ButtonPane #GridPane {
+  -fx-alignment:top-left;
+}
+.InfoPane {
+  -fx-border-radius:6px;
+  -fx-padding:4px;
+}
+.InfoPane #VBox {
+  -fx-border-color:slateblue;
+  -fx-border-radius:7px 7px 0px 0px;
+  -fx-border-style:solid;
+  -fx-border-width:2px;
+  -fx-spacing:0px;
+}
+.InfoPane #VBox #GridPane {
+  -fx-background-color:palegoldenrod;
+  -fx-padding:4px;
+  -fx-spacing:2px;
+}
+.InfoPane #VBox #HBox {
+  -fx-padding:2px;
+  -fx-spacing:2px;
+}
+.InfoPane #VBox .LabelH1 {
+  -fx-alignment:center;
+  -fx-background-color:linear-gradient(slateblue,midnightblue,darkslateblue,midnightblue,black);
+  -fx-padding:6px;
+}
+.InfoPane #VBox .LabelH1 .text {
+  -fx-effect:dropshadow(three-pass-box,black,8,0.5,2,1);
+  -fx-fill:linear-gradient(lightgoldenrodyellow,gold,blanchedalmond);
+  -fx-font:17pt Tahoma;
+}
+
+.TabContent1 {
+}
+.TabContent1 .tab-header-area .tab-header-background {
+  -fx-background-color:linear-gradient(lightgray,gray,black,black);
+}
+.TabContent1 .tab .tab-label .text {
+  -fx-font:bold larger Tahoma;
+}
+
+
+.TabContent2 {
+}
+.TabContent2 .tab .tab-label .text {
+  -fx-font:larger Tahoma;
+}
+
+.TabContent3 {
+}
+
+.TabContent4 {
+}
+
+.FlatInfoSection {
+  -fx-border-color:darkgreen;
+  -fx-border-style:solid;
+  -fx-border-width:4 2 2 2;
+  -fx-border-insets:0;
+  -fx-padding:4;
+}
