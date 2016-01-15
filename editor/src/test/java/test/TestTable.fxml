@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.util.*?>
+<?import test.*?>
+<?scenebuilder-classpath-element split-flip-1.0.0.jar?>
+
+
+<fx:root prefHeight="400.0" prefWidth="600.0" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <center>
+    <TableView fx:id="myTableView" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+        <TableColumn prefWidth="42.0" text="">
+        </TableColumn>
+        <TableColumn prefWidth="110.0" text="Plan">
+          <cellValueFactory>
+            <PropertyValueFactory property="vfcPlan" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="55.0" text="VFC #">
+          <cellValueFactory>
+            <PropertyValueFactory property="vfcNumber" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Location">
+          <cellValueFactory>
+            <PropertyValueFactory property="location" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Arrival">
+          <cellValueFactory>
+            <PropertyValueFactory property="arrivalTime" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="35.0" text="Org">
+          <cellValueFactory>
+            <PropertyValueFactory property="origin" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="35.0" text="Dst">
+          <cellValueFactory>
+            <PropertyValueFactory property="destination" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="65.0" text="Shipments">
+          <cellValueFactory>
+            <PropertyValueFactory property="shipments" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="125.0" text="Consignee">
+          <cellValueFactory>
+            <PropertyValueFactory property="consignee" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="35.0" text="Haz">
+          <cellValueFactory>
+            <PropertyValueFactory property="hazMat" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="45.0" text="Temp">
+          <cellValueFactory>
+            <PropertyValueFactory property="temperature" />
+          </cellValueFactory>
+        </TableColumn>
+      </columns>
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="FMeyer" destination="ANC" hazMat="N" location="Consignee" origin="TAC" shipments="1" temperature="KFF" vfcNumber="345440" vfcPlan="Fred Meyer" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="FMeyer" destination="ANC" hazMat="N" location="Yard" origin="TAC" shipments="1" temperature="KFF" vfcNumber="123456" vfcPlan="Fred Meyer" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="FMeyer" destination="ANC" hazMat="N" location="Trip 12543" origin="TAC" shipments="1" temperature="KFF" vfcNumber="235555" vfcPlan="Fred Meyer" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="Costco" destination="KNA" hazMat="N" location="Trip 551332" origin="TAC" recovered="false" shipments="1" temperature="KFF" vfcNumber="244000" vfcPlan="KNA" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="SBS" destination="ANC" hazMat="N" location="Trip 12543" origin="TAC" recovered="false" shipments="1" temperature="KFF" vfcNumber="291007" vfcPlan="Sealand" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="Costco" destination="FBK" hazMat="N" location="Yard" origin="TAC" recovered="true" shipments="2" temperature="KFF" vfcNumber="291008" vfcPlan="Fairbanks" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="" destination="KNA" hazMat="N" location="Trip 12543" origin="TAC" recovered="false" shipments="1" temperature="KFF" vfcNumber="234554" vfcPlan="" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="" destination="ANC" hazMat="N" location="2" origin="TAC" recovered="false" shipments="2" temperature="KFF" vfcNumber="123407" vfcPlan="Darigold" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="" destination="FBK" hazMat="N" location="Yard" origin="TAC" recovered="true" shipments="1" temperature="KFF" vfcNumber="233458" vfcPlan="Yard" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="" destination="KNA" hazMat="N" location="" origin="TAC" recovered="false" shipments="1" temperature="KFF" vfcNumber="244340" vfcPlan="Flat" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="" destination="ANC" hazMat="Y" location="Trip 12543" origin="TAC" recovered="false" shipments="2" temperature="KFF" vfcNumber="222347" vfcPlan="" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="" destination="FBK" hazMat="N" location="" origin="TAC" recovered="false" shipments="1" temperature="KFF" vfcNumber="312008" vfcPlan="" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="" destination="KNA" hazMat="N" location="Trip 551332" origin="TAC" recovered="false" shipments="1" temperature="KFF" vfcNumber="313000" vfcPlan="" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="SBS" destination="ANC" hazMat="N" location="" origin="TAC" recovered="false" shipments="2" temperature="KFF" vfcNumber="334507" vfcPlan="" />
+          <InboundBean arrivalTime="03-11-13 15:00" consignee="" destination="FBK" hazMat="N" location="" origin="TAC" recovered="false" shipments="1" temperature="KFF" vfcNumber="244408" vfcPlan="" />
+        </FXCollections>
+      </items>
+    </TableView>
+  </center>
+</fx:root>

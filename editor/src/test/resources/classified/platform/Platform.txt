@@ -1,0 +1,14 @@
+146. Multi-language support - The ability to export and load all string entries from the game into an tagged text file
+     and reload that data after translations, changing the entries in all game fields upon loading.
+
+--  YES. This is one of the main points for creating and expanding upon the RM concept: to allow easier localization or
+    internationalization. Although, rather than "exporting" texts during game creation, we will perform some simplified
+    I18N/L10N as the very basis of editing the texts within the game proper.
+______________________________________________________________________________
+
+147. Default skills that cost HP. Instead of using events or scripts, you could be able to make your HP a possible cost
+     for casting a spell, and it should display how much HP it costs in the menu/battle.
+
+--  An ingenious alternative for skill costs; however, I'm not sure this would lead to the kinds of games that I should
+    want to play. Horror games and dark-fantasy games that use a character's health? Ech.
+______________________________________________________________________________

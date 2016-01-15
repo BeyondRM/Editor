@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-preview-i18n-resource ../../i18n/Bundle.properties?>
+<?scenebuilder-stylesheet ../../appstyle.css?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" styleClass="ButtonPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.database.events.EventButtons">
+  <children>
+    <HBox styleClass="HBoxButtonBar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label styleClass="LabelRotate" text="System/Core" />
+        <GridPane styleClass="GridPaneButtonEvents" HBox.hgrow="NEVER">
+          <children>
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+          </children>
+        </GridPane>
+        <Separator orientation="VERTICAL" />
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../appstyle.css" />
+  </stylesheets>
+</fx:root>

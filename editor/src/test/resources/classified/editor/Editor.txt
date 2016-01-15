@@ -1,0 +1,151 @@
+20. RMK3 All Event Commands. For the next RPG Maker, please, think about people who do not care about scripts (I do not
+    want to learn a real programming language), and so: please, bring back all events options (commands) from RPG Maker
+    2000/2003! For this point, VX Ace is really better than VX, but some important things are still missing, like the
+    "wait until a key is pressed" for the pressed buttons commands option.
+    * Limited ways to control TP generation.
+    * No fine control for experience curves.
+    * No "Target All" or "Target X Allies at Random" choices for skills.
+    * No way to trigger events based on enemy deaths. (I suspect this is an oversight, since the tooltips give explicit
+      instructions on how to do this -- only the checkbox to enable it does not exist.)
+    * Limited options to tailor Attack and Guard. (Should not each actor get his/her/its/their own Attack and Guard,
+      seeing how they're required?)
+
+34. Ability to create Custom Event Commands
+
+--  A very puzzled 'NO', for overdoing the event commands; but a possible 'YES' to expanding what was possible in RMVXA
+    and previous. While the issue is not one of forcing a person to learn something they don't want to, at some point a
+    game creator using BeyondRM will still be faced with expanding outside their own comfort zone -- such is basic part
+    and parcel of the act of game-creation itself. That the Editor may exist to assist in the endeavor should be a good
+    thing; that a game creator wants everything to end up being 'point-and-click' is ... unrealistic.
+______________________________________________________________________________
+
+72. Patching System
+
+176. Built-in patching
+
+--  Patching? Patch what?? -- If the Editor and/or its content: okay, I think; if the Engine: still somewhat okay, just
+    more difficult; if updating/patching of game content: YES this is possible and maybe even likely to be implemented.
+    Each aspect of patching may have their own quirks (how to patch a running editor or engine, perhaps?), but updating
+    each of them allows keeping the respective application and/or data as current as possible.
+______________________________________________________________________________
+
+83. Bucket Fill Options. Two things could be drawn and bucket-filled:
+    Borders (For terrain and other types of tiles where rounded and pointed edges would be desirable) and Passability.
+    I'm picturing a system where the border to an autotile would be treated separately to the autotile itself.
+    * For example, drawing a circular "coast" border of 8x8 (or 4x4?) tiles could result in a more natural "curvature"
+      than borders that are designed to enclose the edges of a 32x32 tile. Then, once the circle was drawn, it could be
+      filled with grass tiles.
+
+84. Also, a similar dimension for "passability" would be nice too. Right now, to arbitrarily cut an area off, you have
+    to use a whole transparent tile, set to "X" passability to cut an area off. This would be much smaller -- 8x8, or
+    maybe 4x4 -- allowing you to draw a "line" on the areas you do not want the player to just walk over. This would be
+    handy for parallax mapmakers since they could set a more narrow area for the player to tread instead of having to
+    double-triple check to make sure that their beautiful map aligns with whole, impassible transparent tiles
+
+--  Possible, but not sure it's an optimal solution. Or that it's even a problem (except when bucket-filling the entire
+    map area, or a significant portion of such).
+______________________________________________________________________________
+
+88. Full Encryption -  Encrypt everything - especially audio and any other custom assets. The audio is a big thing, and
+    honestly, I would think EB would like the idea of their audio resources being protected.
+
+--  Doable, within limits; and planned (to whatever extent possible). Database objects are written in my own cryptology
+    methodology; media resources can be protected as well, using other methods.
+______________________________________________________________________________
+
+93. Automatic data backup
+
+123. Cloud storage
+
+251. Auto file backup
+
+--  Another intended feature. For those who wish it, having a timed backup of the project via the editor is probably an
+    ideal solution; especially if they are the type of person who does not save manually or just does not prefer to hit
+    that save button while working within the project. The complication is in keeping track of the span of time between
+    one auto-save and the next; another issue is in making the editor hold off on saving if the user is typing within a
+    database module. "Cloud storage" might be possible for archival purposes, or even for content distribution; but may
+    be less than optimal for storing and retrieving live editable project data.
+______________________________________________________________________________
+
+23. Shadow Pens types
+
+75. Built In Templates - Character, Icon, Tile sets, et cetera.
+
+91. I'd like 3 options in the animation tab:
+    > Easy stretch for animations so that we can easily fill the screen.
+    > Option to have the animation play behind the subject
+    > Automatically place the whole animation at a specified X/Y from animation file
+
+92. redo option in the edit menu
+
+94. And an undo, especially in the case of deleting codes/enemies/et cetera.
+
+95. The ability to organize resources better in directory form, or the ability to put folders in the graphics folders.
+    So like with character sets you could have a folder called 'animals' where all your animal sprites go. Or 'doors'
+    for all your door sprites. It would make eventing about 1000 times faster, especially in games that use a lot of
+    graphics.
+
+96. Emotions to the character generator
+
+102. Audio/BGM Options
+    - If you want the audio in battle to change once one track ends.
+    - Ending credits
+    - A cutscene that plays a song
+    - In scripts that include title screen events, you could have it so that once the title screen music ends, a secret
+      prologue will play before going back to the title screen.
+
+105. A "Clear All" Database option then it says "Are you sure?" Then it say "really Sure?"
+
+106. Point and Click/Drag and Drop Move Routes
+
+109. Be able to edit the project while doing a test play. Not for any changes to be picked up immediately. But I hate
+     playing through a cutscene, see something misspelled or where a line is too long, and having to either close so I
+     can edit straight away, write it down so I do not forget it, or hope I remember.
+     Having the game open in one window with the editor in another where I can just do a heap of testing and immediate
+     fixing without having to leave the game would be incredibly useful.
+
+114. Allow event pages to use 2 self-switches for page conditions instead of just one, similar to how you can use 2
+     switches.
+
+115. Being able to load sample database entries (actors, items, et cetera) like you can do with sample maps.
+
+116. Input your database items in Notepad/Excel and then import them in the editor.
+
+117. The ability to customize the preview windows, in case you have a bigger resolution or a new font.
+
+119. Better control of parameters in the DB. I feel extremely limited with just ATK, DEF, MAT, MDF, AGI, and LUCK.
+     Especially considering all the other parameters  (ex-params, sp-params) used to calculate combat interactions. I'd
+     like to be able to control how they interact with each other, or maybe even which are primary parameters.
+
+121. Allow import of Alpha Objects, the ability to include a graphic element directly to the map that just might be
+     bigger than 32x32 pixels and is not included in the current tile set.
+
+122. Ability to work with tiles as an element instead of a graphic. The designation of pixels (checksum) determine its
+     definition based upon a custom designed table, fully scripted by the World-builder. This would do away with having
+     to write a script or duplicating them for every tile, it would have infinite layers or tile stacking ad infinitum,
+     and it would also determine random encounters without having to manually plot where they are with digits.
+
+124. The ability to hit [Tab] or Ctrl-T to IMMEDIATELY enter Test-play mode directly where the event cursor is. Hitting
+     [Tab] or CTRL-T again will exit right back to the editor. This will be considerably easier than having to show the
+     logo each time and select play and forcing the starting position of the player to where the World-builder is
+     debugging.
+
+125. An RPG calculator. It would be a calculator with a scrolling display that can be saved to Notepad that recognizes
+     variables, such as HP(1) for the 1st player's hit points or HP("joshua") if Joshua is the name of the player. Some
+     variables included could be Str(n/n$), Readywep$(n/n$), Readyarm$(n/n$), Level(n/n$), Itemno(itemid/itemname$), et
+     cetera. This would aid in debugging.
+
+126. The ability to include commands directly in a message panel. So you could say type @Quad @Right or use icons, and
+     the player would -- if facing the sprite from above -- walk right, walk up, then face left, so they are at the
+     right-hand side of the object they are addressing.
+     As with all of these, the entire system and all functions could be accessed from the keyboard and control-keys, if
+     desired. The mouse would NOT be required, but could be used as it normally is now for those people who want to
+     continue to use the mouse.
+
+128. Make more conditions able to trigger a common event. Just switches is unnecessarily limiting, and adding more
+     conditions would make the feature much more powerful.
+
+134. More quick event options
+
+138. Debugger and profiler tools
+

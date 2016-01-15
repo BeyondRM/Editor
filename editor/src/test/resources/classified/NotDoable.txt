@@ -1,0 +1,15 @@
+These following items from the Wikia list, I will view as "Not Doable", by the fact that they are not within the ranges
+of what I am attempting -- such as, "I am coding in Java, not Ruby"; or, "my projects will not require this".
+
+110. Passability Changer; PC for short? We'd have the same setup in the database where we could make our tiles X, O, or
+     Star by default, but then have an option in the main editor where we could click, choose X, O, or Star, and paint
+     them across the map for a specific area we want to behave differently, similar to how we can paint regions. What
+     this will do is allow a person to change the passability of a given tile without having to rely on scripts, events,
+     or tileset reorganization to create the illusion of walking behind a wall.
+     I could set up a wall autotile with X in the database as a default, create the map using this wall, and then click
+     on the PC, choose Star, and then paint that across the area of the wall where I want my character to walk behind.
+
+--  I understand what is intended; but this is not a smart way to go about doing it. Instead, consider using map layers
+    for designing better pseudo-depth. No need to duplicate wall tiles just so a player character can "walk" behind it,
+    partially obscured; we should merely make sure that the bottom wall tiles are on the intended layer, and the upper
+    wall tiles are on the layer just above that.

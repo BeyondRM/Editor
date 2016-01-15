@@ -1,0 +1,25 @@
+
+.root {
+}
+
+#statusBar {
+  -fx-alignment: bottom-center;
+  -fx-background-color: linear-gradient(black,darkgreen,green,palegreen,white,palegreen,green,darkgreen,black);
+  -fx-padding: 6px;
+  -fx-spacing: 4px;
+}
+
+#statusBar .text-field {
+  -fx-border-insets: 4 6 8 9;
+  -fx-border-radius: 9 8 6 4;
+  -fx-display-carat: false;
+  -fx-focus-traversable: false;
+  -fx-font-size: 9;
+  -fx-opacity: 0.7;
+}
+
+#statusBar .text-field .text {
+  -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.4),0,0.0,1.5,0.5);
+  -fx-fill: crimson;
+  -fx-prompt-text-fill: burlywood;
+}

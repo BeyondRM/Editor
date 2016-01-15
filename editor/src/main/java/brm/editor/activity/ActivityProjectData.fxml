@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?scenebuilder-preview-i18n-resource ../i18n/Bundle.properties?>
+<?scenebuilder-stylesheet ../appstyle.css?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="brm.editor.activity.ActivityProjectData">
+  <children>
+    <VBox>
+      <children>
+        <HBox>
+          <children>
+            <Label text="Label" />
+            <Label text="Label" />
+            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Button" />
+          </children>
+        </HBox>
+        <HBox>
+          <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@../appstyle.css" />
+  </stylesheets>
+</fx:root>

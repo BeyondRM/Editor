@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-preview-i18n-resource i18n/Bundle.properties?>
+<?scenebuilder-stylesheet appstyle.css?>
+<?scenebuilder-stylesheet tabbed-content.css?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.EditorCore">
+  <bottom>
+    <fx:include fx:id="statusBar" source="StatusBarPanel.fxml" />
+  </bottom>
+  <center>
+    <TabPane styleClass="TabContent1" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Activity">
+          <content>
+            <fx:include fx:id="activity" source="TabActivity.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Database">
+          <content>
+            <fx:include fx:id="database" source="TabDatabase.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Mapping">
+          <content>
+            <fx:include fx:id="mapping" source="TabMapping.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Resources">
+          <content>
+            <fx:include fx:id="resources" source="TabResources.fxml" />
+          </content>
+        </Tab>
+        <Tab text="System/Game">
+          <content>
+            <fx:include fx:id="system" source="TabSystem.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Tools/Utility">
+          <content>
+            <fx:include fx:id="tools" source="TabTools.fxml" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </center>
+  <top>
+    <VBox maxWidth="1.7976931348623157E308">
+      <children>
+        <MenuBar>
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <Menu mnemonicParsing="false" text="Project">
+                   <items>
+                     <MenuItem fx:id="miFileProjNew" mnemonicParsing="false" onAction="#handleMenuItemAction" text="New..." />
+                     <MenuItem fx:id="miFileProjOpen" mnemonicParsing="false" onAction="#handleMenuItemAction" text="Open..." />
+                     <SeparatorMenuItem />
+                     <MenuItem fx:id="miFileProjProps" mnemonicParsing="false" onAction="#handleMenuItemAction" text="Properties..." />
+                     <MenuItem fx:id="miFileProjClose" mnemonicParsing="false" onAction="#handleMenuItemAction" text="Close" />
+                   </items>
+                </Menu>
+                <SeparatorMenuItem />
+                <MenuItem fx:id="miFileExit" mnemonicParsing="false" onAction="#handleMenuItemAction" text="Exit">
+                  <accelerator>
+                    <KeyCodeCombination alt="DOWN" code="F4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                  </accelerator>
+                </MenuItem>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Mapping">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Save Changes" />
+                <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Revert To Last Save" />
+                <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Generate Preview" />
+                <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Toggle Grid" />
+                <Menu mnemonicParsing="false" text="Toggle Grid">
+                   <items>
+                     <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Layers" />
+                     <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Passability" />
+                     <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Event Layer" />
+                     <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
+                   </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Map Zoom">
+                   <items>
+                     <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="1:1 Ratio" />
+                     <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="1:2 Ratio" />
+                     <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="1:4 Ratio" />
+                     <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="1:8 Ratio" />
+                   </items>
+                </Menu>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="System/Game">
+               <items>
+                 <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Test Play" />
+                 <SeparatorMenuItem />
+                 <CheckMenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Full-Screen Mode" />
+                 <CheckMenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Display Title" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Tools">
+               <items>
+                 <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Database" />
+                 <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Resource Manager" />
+                 <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Import External Data" />
+                 <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Listen to Music" />
+                 <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Find Event" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="Contents" />
+                <SeparatorMenuItem />
+                <MenuItem mnemonicParsing="false" onAction="#handleMenuItemAction" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <ToolBar>
+          <items>
+            <Button mnemonicParsing="false" text="H" />
+          </items>
+        </ToolBar>
+      </children>
+    </VBox>
+  </top>
+  <stylesheets>
+    <URL value="@appstyle.css" />
+    <URL value="@tabbed-content.css" />
+  </stylesheets>
+</BorderPane>

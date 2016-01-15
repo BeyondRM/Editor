@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.common.CommonInfo">
+  <VBox>
+    <HBox>
+      <Label text="Name" />
+      <TextField alignment="BASELINE_LEFT" prefColumnCount="12" promptText="enter a name" />
+    </HBox>
+    <HBox>
+      <Label text="Description" />
+      <TextArea prefColumnCount="20" prefRowCount="4" promptText="describe this for the game" wrapText="true" maxWidth="Integer.MAX_VALUE" />
+    </HBox>
+  </VBox>
+</AnchorPane>

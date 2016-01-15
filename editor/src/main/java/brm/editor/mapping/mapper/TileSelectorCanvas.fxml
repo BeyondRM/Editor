@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root stylesheets="@TileSelectorCanvas.css" type="VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brm.editor.mapping.mapper.TileSelectorCanvas">
+  <children>
+    <GridPane>
+      <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints valignment="BASELINE" vgrow="NEVER" />
+        <RowConstraints valignment="BASELINE" vgrow="NEVER" />
+      </rowConstraints>
+      <children>
+        <Label fx:id="label1" text="Tileset:" />
+        <ComboBox fx:id="combo1" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
+        <Label fx:id="label2" text="Sheet:" GridPane.rowIndex="1" />
+        <ComboBox fx:id="combo2" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      </children>
+    </GridPane>
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" prefViewportWidth="256.0">
+      <content>
+        <Canvas fx:id="canvas" height="1024.0" onMouseClicked="#onCanvasMouseClicked" width="256.0" />
+      </content>
+    </ScrollPane>
+  </children>
+</fx:root>

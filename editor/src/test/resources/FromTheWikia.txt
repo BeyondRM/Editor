@@ -1,0 +1,783 @@
+______________________________________________________________________________
+
+______________________________________________________________________________
+
+18. Default Dual Equipment Capability
+
+
+19. Actor Defined Items
+
+
+21. Full Movement Control Grid Control (and passability)
+
+
+24. Better Support For Large Facesets
+
+
+25. Support for Fog Effects
+
+
+27. XP size character options
+
+
+31. Expand of Traits/Features
+
+
+33. Animations Flexibility and Priority OPtions
+
+
+36. Built in Tileset and autotile Editor/Generator
+
+
+37. Include a new version Music Maker with it. -or a Mario Composer type Music/MIDI Maker
+
+
+38. Advanced Weather options
+
+
+39. Map generator like the dungeon generator
+
+
+40. Be able to have the game player be able to create his/her own character MMO style.
+
+
+41. Default Pixel Movement
+
+
+42. Better Collision Detection
+
+
+43. Be able to change the pitch of a song/theme without changing its tempo.
+
+
+45. Support for ABS such as hit-boxes
+
+
+47. Integrated Particle System
+
+
+48. Light and Shadow Control
+
+
+49. Two/Three/Multi-Player Support
+
+
+50. Split Screen Support and Options
+
+
+51. Integrated Mode7
+
+
+52. Integrated Windowed Mode Support/Option
+
+
+53. Name/Text Box options
+
+
+54. Animated Faceset
+
+
+55. Map Display Name Options
+
+
+56. Enemy Levels/Enemy Level up paired with Characters
+
+
+57. Database No-Limits and More than 999 Maps
+
+
+58. Multiple Window-Skin Option/Ability
+
+
+59. Better Note-Box
+
+
+60. Custom Data Fields for data Types with Name Value Pairs.
+
+
+62. Better Character Generator - Children, Old People, Monsters, Enemies, downed sprites, sleeping, and animated action
+    poses like sword swinging.
+
+
+63. Individual Map Tile Passability Setting Option
+
+
+64. Additional Icons and Icon Set option and/or ability to use multiple Icon Sets.
+    We often see nice icon sets but often have to combine them to use them.
+    How about a feature to import additional sets and select the set you want to use per item/weapon/armor.
+    This way we could have a sets such as icons-potions, icons-weapons, icons-swords, et cetera...
+    Allowing for flipping icons up/down/left/right would be nice too. Some icons are top-left/bottom-right and some are
+      bottom-left/top-right and being able to flip them would be a cool feature.
+    Adding support for modifying the color/hue of a selected icon without scripts/notetags would also be nice.
+
+
+65. Color/Hue/ Saturation Modification like for enemies and animations but be available for all the graphics.
+
+
+66. The ability to set base/additional stats directly in the editor would be a nice feature also.
+    Same with equipment slots/types.
+
+
+68. Battler Generator
+
+
+69. Be able to connect the generator to in-game play!
+
+
+70. Ability to Loop Parts of any music file in audio folder.
+
+
+71. More Battle Back Layers and a Battle Front Layer
+
+
+73. The ability to event individual enemies like you can with troops.
+
+
+74. More ready-to-use states (by default), such as Wall and Reflect.
+
+
+76. Ability to stack events.
+
+
+77. Events that do not lag the map to high hell? You remember in 2k/3 where you could have 50+ events on a map -- just
+    character events or mapping events -- and the map would run smoothly? Even having a few parallel processes running
+    at the same time (as long as they had appropriate waits set in them) would not kill your FPS
+
+
+78. ability to change walk speeds, bind the run button or disable it or make it toggle instead of held
+
+
+82. set from the get-go would be the ability to choose pixel movement in 8-directions vs. strictly grid-based movement.
+    As in a native part of the program that does not need to be scripted.
+
+
+85. More implemented options for skill setups/database. I mean adding in a steal option (let's be honest; many people
+    enjoy having a character steal items, right?) and providing a way to use healing for enemies too. (Magic Pot,
+      anyone?)
+    Also, *maybe* the same style of item tag from 2k/3's database? (I myself prefer that over VX/Ace's)
+    And maybe some more options available with states, too.
+
+
+86. An extra option, much like on VX, where the passability can be selected on the map ITSELF. On selecting the option,
+    all the tiles on the map appear as '?' or something. If you click a specific tile on a map (let's say a table), the
+    passability options cycle though '?', 'o', 'x', and '*'. However, the idea here is that the option OVERRIDES what
+    is set in the tileset. So if on one map you wanted to quickly make it possible to walk on the table, you go to the
+    passability manager (without having to go to the tileset editor) and click on the table to make it 'o'. If on
+    another, you wanted it impossible to do this, then on the other map, you select 'x' unless 'x' is your default for
+    the table.
+
+
+87. Increase the number of regions. 63 sounds like a lot until you start planning a world map. And why 63 (6 bits)?
+    Cannot you find an int somewhere to use for this?
+
+
+89. The ability to copy/paste tiles to make custom tilesets in the editor. Yes, I know you can do this with Gimp, but
+    it would be much simpler (and more accurate and just generally better) to be able to select a square, know you're
+    getting exactly that square, and then put in into a square of another tileset.
+
+
+90. They should have more than 7 terrain ID's. 3 bits? Come on. They're already restricting how many tiles we can have
+    per sheet there is no harm in giving us 8 bits. This is not PC-98 era.
+
+
+97. Allow an event to access the event that triggered it. Example: a bunch of 'events' walking around in the room. It
+    would be nice to put a 'leash' on a square by the door so that whichever event touched it, I could force move back
+    a square or two.
+
+
+98. Allow a conditional branch to access an actor's level directly. I know this can be done via variables, but it would
+    be a lot easier to have it as one of the 'default' choices.
+
+
+99. Have the text preview window recognize the font being used so we can identify when the text will be cut off if we
+    are using a customized font. Of course, a simpler solution would just be to include a wrap text of sorts
+
+
+100. Ability to copy/paste passability of just one tileset (say, Tile C) in Ace instead of either having to copy/paste
+     an entire set of tiles or set up that same Tile C 20 times.
+
+
+103. Smart-phone and Tablet Support/Porting
+
+
+104. Camera Options and Rotations
+
+
+107. Return the Select and Crop Tool
+
+
+111. Built in support for diagonal movement(with option to turn it off of course)
+
+
+113. Support for smaller animation sizes(currently has to be 192x192 per frame, it'd be nice to support say 96x96 for
+     animations that do not need the bigger size, or to reduce load time for animation files with a lot of frames.)
+
+
+129. Script box in the conditions for events and common events so you can add whatever conditions you want instead of
+     relying just on what's already provided, or adding extra scripts to cater for other conditions.
+
+
+130. Object-based shadows
+
+
+131. Map-zooming for battles
+
+
+132. In-battle animation for monsters
+
+
+135. Weapons have their own formulas of dealing damage, maybe a specific damage range. The ATK stat could simply be
+     used as an amplifier of that weapon's base damage.
+
+
+136. An example bar of how much damage a weapon would do to an enemy in the database (select weapon + select enemy =
+     total damage output(could also be used for skills)
+
+
+137. One thing I find odd is that I cannot access and modify the data of another event on the same map easily, such as
+     the value of self_switches within those events. I know I can do a script call, which is what I do now; but being
+     able to access and modify event data for events on the same map would be handy, and as such, enable much more
+     complex event-editing without the need to resort to script calls.
+
+
+139. For Event Commands, let us select if "Wait" is either timed or waits until command before it has finished. It
+     should also be able to be specified which Event Command on the list should finish first before continuing.
+
+
+140. It would be nice in the use of common events which are called in a skill if the event commands could recognize the
+     caster and the selected target. Currently, in case of multiple enemies, you have to use a state and then search in
+     the common event conditions for this state in each enemy then apply whatever specifically to it.
+
+
+141. A possibility to find a certain character-set in the list by typing its name instead of having to scroll and look.
+
+
+142. The ability for string variables (rather than just switches and numbers), and ability to "name input" any string
+     (the said variables, classes, nicknames, et cetera...)
+
+
+143. Additional coordinate-based map data
+
+
+144. Instead of three resources (HP; MP; TP) with fixed behavior (maxvalues, TPbyDamage, ...) I would like to have four
+     resources with a type-selection to determine how they're handled. the type-selection would include options like
+     <HP-Type> (including death when zero), <MP-Type> (for skill costs, may be zero), <TP-Type> (increased by damage),
+     <disabled> (for games that do not use them, removing from status screen), <hidden> (linked to switch, same as
+     disabled until switch is turned on after that same as MP-Type) and <scripted> (being ignored by the game, but
+     available for scripted functions)
+
+
+145. String-variables and string-operation-commands for events
+
+
+148. Adding "Required Equipment" for skills
+
+
+149. Add support for being able to separately animate the head, arms, legs, and acc stuff
+
+
+151. A function to find which events are associated with certain switches, variables or other conditions.
+
+
+152. A fade-in command for BGM and BGS, as well as proximity based sounds
+
+
+153. Being able to dictate event functionality based upon the completion of a BGM, without having to insert a bunch of
+     wait commands and estimate when the track will end.
+
+
+154. Optional hexagonal tiles
+
+
+156. Event move to Event! With logic to detect blockages.
+
+
+157. Set Level Numbers past the current limit, so we can directly change how many levels and what they cost.
+
+
+159. More Max Events/Maps as standard, for larger games.
+
+
+160. Large Sprite Support, so heads do not get cut off.
+
+
+161. Map decorations outside eventing
+
+
+163. A player view where you can tell what a player can see while playing the game.
+
+
+164. Add a triggering button in the editor that will auto-populate a player's view of the map (based on the map the
+     developer is currently working on) in full view. Set the default start in the center of the map.
+
+
+165. I want some RM2K and 3 functionality added back in, primarily more control over enemy events, such as being able
+     to control when a preemptive or a sneak attack happens first against you or the enemy, being able to decide what
+     players or class can use what items like you can for weapons and armor, and the same control over EXP gains that
+     2K/3 had, which offered more flexibility than the current system does.
+
+
+166. More options in the map properties, such as switches for random encounter troops, and note-boxes that could offer
+     more opportunity for script writers.
+
+
+167. Tileset swapping, driven by events, especially for auto tiles
+
+
+168. A simple rectangle, or any decorative box, that you can display by hitting a button on the editor, or pushing a
+     hot-key. Choose the width and height and you're all set. Drag it around, have it snap to grid possibly, et cetera.
+
+
+169. Drag/drop pages to change their order.
+
+
+170. Trigger event when switch is OFF. This would remove the need for creating empty events, since you could turn the
+     switch on at the end of the event for one time events.
+
+
+171. Seeing the location of events when editing the region layer.
+
+
+172. Add the option to make land vehicles, so we do not have to do tricky eventing in order to make our heroes ride a
+     horse to another location.
+
+
+173. Add the option to make events occur in vehicles, such as battles on an airship and fixed events triggered in the
+     sea.
+
+
+174. Greatly expanded note-tagging for all equips, items, states, and skills. A note-tag box for setting up custom
+     conditions for events would be pretty cool, too.
+
+
+175. Add a new box "user data" to every object. Since it will be intended for script data transfer, the game could also
+     contain a predefined method for parsing the box, so that scripters do not have to make that method themselves, and
+     the format for that data is better defined than allowing every scripter to define his own symbols.
+
+
+177. Editor mods support (edit the GUI of RPG Maker's editor, instead of just executing when the game starts)
+
+
+178. Editor Auto-recovery: If an editor crashes, it is recovered to a state where it was auto-recovered (once each 5
+     minutes); or when it was last saved (option to the user when reopening RPG Maker)
+
+
+179. Mac-like Versions saving/opening, so you can save things, even you're not really sure if it is a better thing you
+     changed (as an option) This video shows more information about the subject:
+     http://www.youtube.com/watch?v=IkY-BI377NI
+
+
+180. Skip title screen toggle for debugging purposes
+
+
+181.  Animated title screen support
+
+
+182. Toggle tile behavior view (like 'wall', 'bridge over player', 'ice blocks', 'ground', 'conveyor belt', �c)
+
+
+183. Toggle tile animations on editor map on/off
+
+
+184. Ability to quickly find scripting bugs (color-coded scripts: red = possible crash at startup, conflicting scripts;
+     yellow = possible bug but still playable, like missing or empty variable)
+
+
+186. Move route tool optimized to move a path created by pressing the arrow keys
+
+
+187. Full custom stat controls, like ATK and EXP
+
+
+189. Secondary party members auto-following player standardly, but able to script movement to break off and act as NPC
+     until getting back to follower mode.
+
+
+190. Disable scripts without removing them completely
+
+
+191. Some improvements/extensions on default scripts like the Cache (why can we not cache stuff by default when the game
+     loads?).
+
+
+192. Editor support folders. Example: put images in "graphics/pictures/"; Editor can read it using show pictures. But,
+     if we put it in "Graphics/pictures/minimap/", Editor cannot read it. So sometimes our files got cluttered on the
+     folder...
+
+
+193. Built in Map-shot capture. For parallax mapping.
+
+
+194.  Custom character-set size with custom collision.
+
+
+195. Bigger script call box. Or, it's okay the current size as long work like script editor (did not go to next line,
+     unless we press enter).
+
+
+196. A battler generator.
+
+
+197. Make the icon set bigger. Much bigger.
+
+
+198. Let us select a custom menu format in the database, like having a Ring Menu or the Default VX Menu.
+
+
+199. Add a fill tool when editing Regions. I do not want to go Tile by Tile adding region variables to every part of a
+     map. Make it easy, and have us use a fill tool to cover regioning much faster.
+
+
+200. More generator options (e.g. child, old, monster, animal, et cetera.)
+
+
+201. Different height sprite templates, plus generator capabilities
+
+
+202. A "find and replace" feature for switches and variables when editing events
+
+
+203. Better support for custom properties; something like a box where you can do something like [PropertyName] [Value].
+     Then the engine parses it so that we can fetch the value via using something like "object.PropertyName". That way,
+     we wo not need to alias data loading and use note-tags to create our own custom properties for database objects...
+
+
+204. Support for setting another identifier for database objects other than index
+
+
+205. RPG Maker XP's picture "fog" function (not a weather type)
+
+
+206. Unlimited tiles per tileset, unlimited tilesets, unlimited autotiles per tileset, or at least much more than the
+     amount that RPG Maker VX (Ace) offers.
+
+
+207. Support for fonts read from an image file rather than font files.
+
+
+208. Have BGM stop playing when the screen's clicked away from
+
+
+209. Playing multiple BGS sounds at the same time
+
+
+211. Bring back [panning] and [fade] options for Audio (lost since RPGXP and newer) and integrate cross-fading between
+     2 BGM tracks.
+
+
+212. The ability to change event contents by hand. That is, there is the default mode like right now where you double
+     click to add event commands, but there is another mode that translates the commands into text, in the same way the
+     forum lets you change between the WYSIWYG and BB-code mode.
+
+
+213. Choose the frame size of imported assets: When importing an asset in the game, let me specify the frameWidth and
+     frameHeight instead of having to leave blank space just for the sake of how the engine cuts it. If it's just 3,
+     it's just 3 frames. No need for 3 frames with 6 blank ones, the engine could be smarter then that.
+
+
+214. Easily re-sizeable collision rectangle: Option to change/set a collision rectangle of an event so it's easier to
+     trigger stuff by distance and so on.
+
+
+215. Integrated IDE
+
+
+216. Editable Graphical Menu System
+
+
+217. AI system
+
+
+219. Automatic stat generation for enemies
+
+
+220. Built-in support for modern game-pads. There's no control over axis values aside from pressed/released.
+
+
+221. Selecting icon for game executable
+
+
+222. Transitions from RPG Maker XP
+
+
+223. An "Add Feature" or "Subtract Feature" command.  I'd love to be able to, upon level up, adding new features to
+     actors or classes.
+
+
+224. What about more customization with items?  Instead of just "double xp" or "double gp" as options for an item, why
+     not allow us to set a percentage?
+
+
+225. I'd also like the ability to link specific skills to the "Attack" command if I wanted to so that actors could have
+     different "unarmed attack" animations without having to script.
+
+
+226. More default self switches.
+
+
+227. A "Script Input" option inside the features for everything. I want this character to have "autoAsdf" as a feature
+     (something game-specific), or a special formula for poison damage, then put it inside the script input feature.
+
+
+229. Showing Text. Show Text Window constantly displays and update a preview that displays below ok and cancel (preview
+     is more accurate than the two guide arrows). Automatically correct text if a word is outside of the dialogue box
+     margin it moves it down unless there are no more lines below. Maybe a spell-check?
+
+
+230. Changing priority without changing to a different event page
+
+
+231. Being able to see the backs of the actors in the battle system.
+
+
+232. Enemy magic has a graphic like player magic
+
+
+233. Enemies animate rather than flash when attack, as well as possible idling animation
+
+
+234. Autonomous move type: Move away
+
+
+235. Event trigger condition facing direction (either of player or event)
+
+
+236. When on the map, animation should stick to coordinates on the map, instead of following the view.
+
+
+237. Ability to set animation speed
+
+
+238. Define up to 9999 values for the Terrain Tag, each tag having options like Encounter Rate, Vehicle Settings,
+     AirShip Landing, and battle-back graphic.
+
+
+239. Save As, Recent File List, and Merge Game for File Menu.
+
+
+240. Updated Ruby
+
+
+241. Multiple speaker support
+
+
+242. Attributes should not be hard-coded
+
+
+243. Having multiple triggers for one event page that can cause different things. For example, if I press action on an
+     NPC, I talk to them. If I push up against the same NPC, I can move them out of my way (in case they're blocking me
+     in a hallway).
+
+
+244. Default class for projectiles, and an event trigger for projectile hit.
+
+
+245. Ability to add/remove Features from classes or characters with an event.
+
+
+246. Checking for characters in the party with each other which might lock/unlock certain magic, skills or traits.
+
+
+247. Customizable "Attack" feature.
+
+
+248. Note-boxes for enemy actions and animations
+
+
+249. Actors and enemies should use the same methods. Scripts that apply to actors should apply to enemies, too.
+     Homogenize enemies and actors.
+
+
+252. Note-tags for variables
+
+
+253. A dial within the Map Property that turns saving from the menu on and off for that particular map. These could be
+     on by default, and whenever a map that the developer does not want them on (or wishes to use save points instead)
+     they would just un-check the dial.
+
+
+254. Indicating certain items that can only be used on certain maps. So, for instance, you have a tent or sleeping bag
+     that should only be used on the world map, but not in town or in dungeons. In the database, you would add to the
+     item use (ie., battle, menu, key, et cetera) and add the option of "Map". That item would then be a usable item, but it
+     will not be available for use (even if it's in your inventory) unless it's checked in Map Properties, and only then
+     would be available for just the maps where it's checked.
+
+
+255. Switches or Conditions to control what types of encounters take place at different times. I add slimes as a random
+     encounter in Map Properties for a given map. I then indicate that random ogres would replace slimes if Switch X is
+     on. If some event occurs in my game and I flip Switch X, if I were to revisit this map, random ogres would attack,
+     instead of slimes.
+
+
+256. Allow the player to choose the battle and victory music for each map in map properties, like you do with map BGM.
+     These can still be overridden with events, if necessary.
+
+
+257. In VX, we had map areas where we could set up encounters. This was removed in Ace and we received regions instead.
+     I vote, keep regions in place (if not improved upon) but bring back map areas for a completely different purpose:
+     use map areas to control changes that should occur in the parent map when conditions are met -- like if a village
+     gets destroyed.
+     As it stands right now, we can only change a map through events or by creating a duplicate map with all the changes.
+     If we're planning a lot of changes, or we need a new tileset to paint over the existing map, events will not
+     cut it, so we need to create a duplicate map. And then we need to remember to add a switch so the new map shows and
+     not the old, and to go back and alter all of our transfer events based on the switch. If the changes occur to the
+     world map, that could be dozens (if not hundreds) of events we need to fix, for every area (village, dungeon, et cetera)
+     that exits out onto the world map.
+     With Map Areas, this could be fixed to better suit the user. First, we design the parent map. Then we choose map
+     area (like in VX), which duplicates a copy of the parent map. In the new map area, we can select a completely new
+     tileset and/or repaint the areas that are changing with new tiles and events. The area maps would be switch-driven
+     so they will not turn on and override the parent map until the switch for it has been turned on.
+     Once that switch for the new map area is turned on, any entry points that previously went into the old parent map
+     would now enter the new map area. This would only effect transfers that were previously not switch-driven.
+
+
+258. A more detailed battle event editor, preferably one that allows the user to obtain targeted data more easily.
+
+
+259. Isometric view support
+
+
+260. Built-in pathfinder
+
+
+261. More options for enemy AI.
+
+
+262. Effects for show picture command, like fade in/out.
+
+
+263. Event detection system
+
+
+264. 2.5D support
+
+
+265. Sprite changes and/or additions based upon equipped items
+
+
+266. Better camera control options
+
+
+267. Having single enemy battler event commands similar to how we have troop commands. This way we can have specific
+     battlers do special things (like transforming into another enemy, creating random variables, triggering switches,
+     et cetera) without having to program them into each troop they are with.
+
+
+268. Export map.
+
+
+269. Features from Yanfly scripts.
+
+
+270. Changing the color of individual text boxes
+
+
+271. Option to place the portrait on different sides of the text box.
+
+
+272. Allow for different types of battle transitions
+
+
+273. Exporting and importing level maps, including tile arrangements and events
+
+
+274. More undo and redo
+
+
+275. Stop telling us what type of switches/page conditions can be used on a page. Have it like the PlayStation RPG Maker,
+     where there is just 6 empty slots(perhaps increase it to 8 slots to be on the safe side, and you can put whatever
+     type of switches/page conditions you want(switches, char in your party, items in inventory, et cetera).
+
+
+276. No more hard-coded game-related values, either in the DLL or in RGSS
+
+
+277. A tab on the database in which the user can define whichever parameters they want.
+
+
+279. Alchemy system script built into the editor.
+
+
+280. Better visually identified save files, for example show level and location you saved at, level of player, and the
+     amount of money you have. The player can also enter a name for the save file.
+
+
+281. Better control over the workspace
+
+
+282. "Variable tree". A way to look at where a variable is used. Map, event, or on which item in the database it's
+     attached too. This would help immensely with puzzles, quests, and functionality for testing.
+
+
+283. An event tree in general, so we can easily locate the exact event we need to look into, edit, add things to, et
+     cetera(aka clicking the event listed on the Event Tree instantly opens the event window for that event)
+
+
+284. All the old Event Commands from RPG Maker 2003.
+
+
+285. More sheet slots for animations.
+
+
+286. Support for GPU and multi-core processors.
+
+
+287. States that override other states.
+
+
+288. Categorize Move Route commands
+
+
+289. Revised and more detailed help file
+
+
+290. "Change battler graphic" event command
+
+
+291. Select enemy attack animation.
+
+
+292. Sort order entries: What about a sort order by alphabet? You still have IDs in the database, why not sort them?
+     The IDs would not change, but sorting them so a human can find things would be nice. In game there are ways to
+     alphabetize things with scripts, but not in the actual maker itself.
+
+
+293. What about filters? If I want a skill that regenerates MP, I do not want to look through all 600 skills to find
+     which 3 regenerate MP. Or how about finding enemies with over 1,000 HP?
+
+
+294. Changing the pitch of a track while it's running, or change it without changing its tempo
+
+
+295. Ability to decide when a track should play. For example, if you want a BGM to begin after an intro ME, you
+     currently have to time it and add the wait commands. A feature that tells the system to wait until the ME ends to
+     play this music would be nice.
+
+
+296. Better support for concurrent processes. Threads, not just Fibers.
+
+
+297. Common battle events: allows the same conditions as the pages for troops do which are different than regular event
+     pages, but allows application to all battles without copying code 100 times.
+
+
+298. New battle conditions for actor and enemy conditions.
+    Players<br />-being ordered<br />-being attacked<br />-using skill (includes attacking) and which skill
+    Enemy<br />-being attacked<br />-using skill and which skill
+
+
+299. Allow characters and monsters to have inheritable, customizable states. I would like the ability to make my bosses
+     enrage if a fight goes on longer than it should (gear check basically) without having to mess around with switches
+     and variables for every boss to make it happen.
+
+
+300. Default steal command.
+
+
+301. Enemy drops. Currently, we can drop 3 of the same item from a monster and no more. Doing that, you have to set all
+     three of your "item drops" to the same item at the same rate to get that to happen. I propose that we allow people
+     to put in "Amount Dropped" as well. In case we wanted monsters to drop say crafting materials, we could say "Harpy
+     Feather, 25%, Drop 4".  You could then save other slots for other items.
+
+
+302. Make the database window re-sizeable
