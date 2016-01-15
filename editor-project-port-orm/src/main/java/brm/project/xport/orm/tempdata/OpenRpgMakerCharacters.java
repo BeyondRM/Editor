@@ -55,7 +55,7 @@ public class OpenRpgMakerCharacters extends AEditorProject {
   private int accessory;
   // skillProgression:
   //   ... (TODO: need to set this in a project to see what it does....
-  // comditionResists:
+  // conditionResists:
   private String conditionResists;
   // attributeResists:
   private String attributeResists;
@@ -70,9 +70,6 @@ public class OpenRpgMakerCharacters extends AEditorProject {
 
   public OpenRpgMakerCharacters(File file) throws ParserConfigurationException, SAXException, IOException {
     super(file, "");
-  }
-
-  private void parse() {
   }
 
   @Override
@@ -135,6 +132,9 @@ public class OpenRpgMakerCharacters extends AEditorProject {
   @Override
   public void setProjectDataSaved(boolean b) {
     projectDataSaved = b;
+  }
+
+  private void parse() {
   }
 
   public String getAttributeResists() {
@@ -285,151 +285,151 @@ public class OpenRpgMakerCharacters extends AEditorProject {
     return wisdom.clone();
   }
 
-  public void setAccessory(int accessory) {
-    this.accessory = accessory;
+  public void setAccessory(int i) {
+    accessory = i;
   }
 
-  public void setAgility(int[] agility) {
-    this.agility = agility.clone();
+  public void setAgility(int[] is) {
+    agility = is.clone();
   }
 
-  public void setAiControlled(boolean aiControlled) {
-    this.aiControlled = aiControlled;
+  public void setAiControlled(boolean b) {
+    aiControlled = b;
   }
 
-  public void setAiLevel(int aiLevel) {
-    this.aiLevel = aiLevel;
+  public void setAiLevel(int i) {
+    aiLevel = i;
   }
 
-  public void setArmor(int armor) {
-    this.armor = armor;
+  public void setArmor(int i) {
+    armor = i;
   }
 
-  public void setAtack(int[] atack) {
-    this.atack = atack.clone();
+  public void setAtack(int[] is) {
+    atack = is.clone();
   }
 
-  public void setAttributeResists(String attributeResists) {
-    this.attributeResists = attributeResists;
+  public void setAttributeResists(String s) {
+    attributeResists = s;
   }
 
-  public void setClassID(int classID) {
-    this.classID = classID;
+  public void setClassID(int i) {
+    classID = i;
   }
 
-  public void setCommand1(int command1) {
-    this.command1 = command1;
+  public void setCommand1(int i) {
+    command1 = i;
   }
 
-  public void setCommand2(int command2) {
-    this.command2 = command2;
+  public void setCommand2(int i) {
+    command2 = i;
   }
 
-  public void setCommand3(int command3) {
-    this.command3 = command3;
+  public void setCommand3(int i) {
+    command3 = i;
   }
 
-  public void setCommand4(int command4) {
-    this.command4 = command4;
+  public void setCommand4(int i) {
+    command4 = i;
   }
 
-  public void setCommand5(int command5) {
-    this.command5 = command5;
+  public void setCommand5(int i) {
+    command5 = i;
   }
 
-  public void setCommand6(int command6) {
-    this.command6 = command6;
+  public void setCommand6(int i) {
+    command6 = i;
   }
 
-  public void setConditionResists(String conditionResists) {
-    this.conditionResists = conditionResists;
+  public void setConditionResists(String s) {
+    conditionResists = s;
   }
 
-  public void setDefense(int[] defense) {
-    this.defense = defense.clone();
+  public void setDefense(int[] is) {
+    defense = is.clone();
   }
 
-  public void setDuelWielding(boolean duelWielding) {
-    this.duelWielding = duelWielding;
+  public void setDuelWielding(boolean b) {
+    duelWielding = b;
   }
 
-  public void setEquipmentLocked(boolean equipmentLocked) {
-    this.equipmentLocked = equipmentLocked;
+  public void setEquipmentLocked(boolean b) {
+    equipmentLocked = b;
   }
 
-  public void setFaceGraphic(int faceGraphic) {
-    this.faceGraphic = faceGraphic;
+  public void setFaceGraphic(int i) {
+    faceGraphic = i;
   }
 
-  public void setHasCriticalHits(boolean hasCriticalHits) {
-    this.hasCriticalHits = hasCriticalHits;
+  public void setHasCriticalHits(boolean b) {
+    hasCriticalHits = b;
   }
 
-  public void setHelmet(int helmet) {
-    this.helmet = helmet;
+  public void setHelmet(int i) {
+    helmet = i;
   }
 
-  public void setMaxHP(int[] maxHP) {
-    this.maxHP = maxHP.clone();
+  public void setMaxHP(int[] is) {
+    maxHP = is.clone();
   }
 
-  public void setMaxLevel(int maxLevel) {
-    this.maxLevel = maxLevel;
+  public void setMaxLevel(int i) {
+    maxLevel = i;
   }
 
-  public void setMaxMP(int[] maxMP) {
-    this.maxMP = maxMP.clone();
+  public void setMaxMP(int[] is) {
+    maxMP = is.clone();
   }
 
-  public void setMightyGuard(boolean mightyGuard) {
-    this.mightyGuard = mightyGuard;
+  public void setMightyGuard(boolean b) {
+    mightyGuard = b;
   }
 
-  public void setMinLevel(int minLevel) {
-    this.minLevel = minLevel;
+  public void setMinLevel(int i) {
+    minLevel = i;
   }
 
-  public void setMultiplier(int multiplier) {
-    this.multiplier = multiplier;
+  public void setMultiplier(int i) {
+    multiplier = i;
   }
 
   public void setName(String s) {
     name = s;
   }
 
-  public void setPrimary(int primary) {
-    this.primary = primary;
+  public void setPrimary(int i) {
+    primary = i;
   }
 
-  public void setRate(int rate) {
-    this.rate = rate;
+  public void setRate(int i) {
+    rate = i;
   }
 
-  public void setSecondary(int secondary) {
-    this.secondary = secondary;
+  public void setSecondary(int i) {
+    secondary = i;
   }
 
-  public void setShield(int shield) {
-    this.shield = shield;
+  public void setShield(int i) {
+    shield = i;
   }
 
-  public void setSprite(int sprite) {
-    this.sprite = sprite;
+  public void setSprite(int i) {
+    sprite = i;
   }
 
-  public void setSpriteOpacity(int spriteOpacity) {
-    this.spriteOpacity = spriteOpacity;
+  public void setSpriteOpacity(int i) {
+    spriteOpacity = i;
   }
 
-  public void setUnarmedBattleAnimation(int unarmedBattleAnimation) {
-    this.unarmedBattleAnimation = unarmedBattleAnimation;
+  public void setUnarmedBattleAnimation(int i) {
+    unarmedBattleAnimation = i;
   }
 
-  public void setWeapon(int weapon) {
-    this.weapon = weapon;
+  public void setWeapon(int i) {
+    weapon = i;
   }
 
-  public void setWisdom(int[] wisdom) {
-    this.wisdom = wisdom.clone();
+  public void setWisdom(int[] is) {
+    wisdom = is.clone();
   }
 }
