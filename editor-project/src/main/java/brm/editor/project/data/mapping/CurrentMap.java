@@ -4,7 +4,7 @@ package brm.editor.project.data.mapping;
 /**
  * The current map being edited. This public utility class contains fields and methods for managing the aspects of a
  * tile-based map, currently in memory.
- * <p/>
+ * <p>
  * RPG Maker VX Ace (et al) has the following editable fields in the dialog interface:
  * <pre>
  *     General Settings

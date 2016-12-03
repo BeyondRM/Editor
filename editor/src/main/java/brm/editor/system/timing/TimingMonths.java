@@ -12,7 +12,13 @@ import javafx.scene.control.cell.PropertyValueFactory;
  *
  * @author Gregory
  */
-public class TimingMonths implements Initializable {
+public class TimingMonths {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private PropertyValueFactory<SystemTimingMonths, Integer> number;
   @FXML
@@ -22,7 +28,10 @@ public class TimingMonths implements Initializable {
   @FXML
   private PropertyValueFactory<SystemTimingMonths, Integer> days;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public TimingMonths() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

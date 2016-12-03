@@ -7,7 +7,6 @@ import brm.editor.system.SystemTiming;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 
 
 /**
@@ -15,7 +14,13 @@ import javafx.fxml.Initializable;
  *
  * @author Gregory
  */
-public class TabSystem implements Initializable {
+public final class TabSystem {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private SystemImages images;
   @FXML
@@ -27,7 +32,10 @@ public class TabSystem implements Initializable {
   @FXML
   private SystemTiming timing;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public TabSystem() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

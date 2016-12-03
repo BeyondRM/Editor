@@ -1,7 +1,7 @@
 package brm.editor;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
 
 
 /**
@@ -9,8 +9,18 @@ import javafx.fxml.Initializable;
  *
  * @author Gregory
  */
-public class TabScreens implements Initializable {
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+public final class TabScreens {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
+
+  public TabScreens() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

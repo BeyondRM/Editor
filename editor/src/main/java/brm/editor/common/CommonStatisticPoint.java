@@ -1,19 +1,28 @@
 package brm.editor.common;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
 
 
 /**
  * FXML Controller class
  * @author Gregory
  */
-public class CommonStatisticPoint implements Initializable {
+public final class CommonStatisticPoint {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
+
+  public CommonStatisticPoint() {
+  }
 
   /**
    * Initializes the controller class.
    */
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  @FXML
+  private void initialize() {
   }
 }

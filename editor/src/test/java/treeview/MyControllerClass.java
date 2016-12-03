@@ -13,7 +13,7 @@ public class MyControllerClass {
   private TreeView<String> locationTreeView;
 
   // the initialize method is automatically invoked by the FXMLLoader - it's magic
-  public void initialize() {
+  private void initialize() {
     loadTreeItems("initial 1", "initial 2", "initial 3");
   }
 

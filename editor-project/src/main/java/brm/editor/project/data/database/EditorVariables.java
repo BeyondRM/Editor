@@ -22,7 +22,7 @@ import java.util.List;
 
 
 /**
- * A public utility class with fields and methods for managing the details of a Variables-Management utility.<p/>
+ * A public utility class with fields and methods for managing the details of a Variables-Management utility.<p>
  * In terms of the editor, it needs to control the variables in the variables database or for the assorted subcomponents
  * of the database.<br/>
  * In terms of the engine, it needs to be able to load and edit the variables through the game-play, and save them with

@@ -4,7 +4,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
@@ -18,9 +17,15 @@ import javafx.scene.image.ImageView;
  *
  * @author Gregory
  */
-public class ToolsSpriteGen implements Initializable {
+public class ToolsSpriteGen {
   private static final TempCharImageEditor tcie = TempCharImageEditor.instance;
 
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private Button buttonQuit;
   @FXML
@@ -44,12 +49,15 @@ public class ToolsSpriteGen implements Initializable {
   @FXML
   private TextField tfTargetName;
 
+  public ToolsSpriteGen() {
+  }
+
   @FXML
   private void handleButtonAction(ActionEvent event) {
   }
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  @FXML
+  private void initialize() {
     //TODO: Create the initialization methodology for pre-loading the defaults for combo-boxes and lists.
     // The base body types, the genders, the ages ....
 

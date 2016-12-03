@@ -4,6 +4,7 @@ import brm.editor.project.data.ProjectData;
 import brm.editor.project.ui.DialogProjectNew;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -20,6 +21,12 @@ import javafx.stage.Stage;
  * @author Gregory
  */
 public class EditorCore extends BorderPane {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   private final ProjectData projectData = ProjectData.instance;
   private Stage stage;
   //TODO: By necessity, we need to enumerate a few menu items, especially those that can be enabled/disabled....
@@ -47,7 +54,7 @@ public class EditorCore extends BorderPane {
   @FXML
   protected TabMapping mapping;
   @FXML
-  protected TabResources resources;
+  protected TabResources resource;
   @FXML
   protected TabSystem system;
   @FXML
@@ -86,7 +93,7 @@ public class EditorCore extends BorderPane {
   }
 
   @FXML
-  public void initialize() {
+  private void initialize() {
     statusBar = new StatusBarPanel();
     statusBar.setTextField(0, "left");
     statusBar.setTextField(1, "middle");
@@ -94,7 +101,7 @@ public class EditorCore extends BorderPane {
     activity = new TabActivity();
     database = new TabDatabase();
     mapping = new TabMapping();
-    resources = new TabResources();
+    resource = new TabResources();
     system = new TabSystem();
     tools = new TabTools();
   }

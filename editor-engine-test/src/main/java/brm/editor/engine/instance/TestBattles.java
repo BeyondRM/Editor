@@ -8,7 +8,7 @@ package brm.editor.engine.instance;
 public class TestBattles extends InstanceTest {
   /**
    * A public constructor.
-   * <p/>
+   * <p>
    * This is one of two ways to allow test-playing of battle scenarios; the other way is via including the test classes
    * in the game engine itself &mdash; but then it would be available for players as well. Not necessarily a bad thing,
    * but some game authors may not want their target players to be able to select random battles to play, over and over

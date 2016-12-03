@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * A character image editor. This singleton class contains fields and methods for managing the details of the base
  * defaults and currently-selected values for the image being edited or created.
- * <p/>
+ * <p>
  * This class provides a number of defaults to use, from the application's global data in {@link List} arrays; it also
  * provides some public (but not static) fields and methods to edit the current image properties.
  * @author Gregory
@@ -28,7 +28,7 @@ public class TempCharImageEditor {
   /**
    * A current character name. This is a working name of the target character that will be represented in the resulting
    * sprite-sheet.
-   * <p/>
+   * <p>
    * Every character uses a name; although in terms of this application-usage, a 'name' could just as well be a 'title'
    * &mdash; for example, "Mayor" instead of a particular personal name.
    */

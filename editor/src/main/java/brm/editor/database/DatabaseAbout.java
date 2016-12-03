@@ -1,7 +1,7 @@
 package brm.editor.database;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
 
 
 /**
@@ -38,10 +38,19 @@ import javafx.fxml.Initializable;
  * </pre>
  * @author Gregory
  */
-public class DatabaseAbout implements Initializable {
+public final class DatabaseAbout {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   //TODO: Add either a text area or several text fields, to write the details of the database objects.
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public DatabaseAbout() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

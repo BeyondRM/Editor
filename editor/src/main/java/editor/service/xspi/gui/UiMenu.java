@@ -35,7 +35,7 @@ public @interface UiMenu {
 
   /**
    * The parent menu name. This is the text for the menu entry.
-   * <p/>
+   * <p>
    * It has no default entry because the developer must provide one, for correct functionality.
    * @return A {@link String} object.
    * @see UiMenu
@@ -45,7 +45,7 @@ public @interface UiMenu {
   /**
    * The menu title. This is the text for the menu entry. If the supplied text contains a "#" (hash tag or pound sign),
    * and has no spaces, then the text is a link to an internationalized text string.
-   * <p/>
+   * <p>
    * It has no default entry because the developer must provide one, for correct functionality.
    * @return A {@link String} object.
    * @see UiMenu

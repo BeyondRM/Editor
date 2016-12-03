@@ -6,7 +6,7 @@ package brm.project.xport.orm.tempdata;
  * A type definition. This public enumeration defines the types of items used in Open RPG Maker, version {@code 0.2.3}
  * and previous. It allows for analyzing the items and importing from, or exporting to, the Open RPG Maker items (with
  * some exceptions).
- * <p/>
+ * <p>
  * TODO: Do not forget, in my implementation I will also be using some new Equipment sub-categories to expand items. As
  * an example, the Accessories can be further subdivided into such categories as:
  * <pre>
@@ -16,10 +16,10 @@ package brm.project.xport.orm.tempdata;
  *    other types of clothing
  *      capes/cloaks/coats
  * </pre>
- * <p/>
+ * <p>
  * These will not be directly exportable to Open RPG Maker and RPG Maker, et cetera, as they might not (yet) allow for
  * tracking of those items as primary-level equipment types.
- * <p/>
+ * <p>
  * Where RPG Maker VX Ace separates armors and weapons from the general items definitions, Open RPG Maker kept them all
  * together in the same tab page but uses an "attack attribute" CheckList to specify, for example weapons, which weapon
  * type the item is. On the other hand, in our Beyond RM, we have sub-tabs within the core "Items" project tab.
@@ -35,7 +35,7 @@ public enum TypeItem {
   /**
    * A "weapon". This is for the weapon definitions, any of a wide variety of equipment subtypes that can be used for
    * attack. They may have subtypes that are more specific to exactly what type of damage they perform.
-   * <p/>
+   * <p>
    * In RPG Maker VX Ace (et cetera), weapons are not listed with the rest of the items, but in the Weapons tab. But in
    * Beyond RM,
    * @see TypeItem
@@ -44,7 +44,7 @@ public enum TypeItem {
   /**
    * A "shield". These are for shield definitions, a defensive object generally held by front-line soldiers to guard
    * against attack damage.
-   * <p/>
+   * <p>
    * In RPG Maker VX Ace (et cetera), shields are not listed with the rest of the items, but in the Armors tab. But in
    * Beyond RM,
    * @see TypeItem
@@ -53,7 +53,7 @@ public enum TypeItem {
   /**
    * An "armor". These are for armor definitions, a defensive object worn as clothing or above the clothing to guard
    * against damage.
-   * <p/>
+   * <p>
    * In RPG Maker VX Ace (et cetera), armors are not listed with the rest of the items, but in the Armors tab. But in
    * Beyond RM,
    * @see TypeItem
@@ -62,7 +62,7 @@ public enum TypeItem {
   /**
    * A "helmet". These are for helmet definitions, a defensive object worn specifically upon the head to prevent head
    * damage.
-   * <p/>
+   * <p>
    * In RPG Maker VX Ace (et cetera), helmets are not listed with the rest of the items, but in the Armors tab. But in
    * Beyond RM,
    * @see TypeItem
@@ -71,7 +71,7 @@ public enum TypeItem {
   /**
    * An "accessory". These are for accessories definitions, a miscellaneous object worn as an additional charm or ward
    * against damage (magic, physical, or otherwise).
-   * <p/>
+   * <p>
    * In RPG Maker VX Ace (et cetera), accessories are not listed with the rest of the items, but in the Armors tab. But
    * in Beyond RM,
    * @see TypeItem

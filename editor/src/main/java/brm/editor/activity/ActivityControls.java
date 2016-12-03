@@ -3,14 +3,19 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
 
 
 /**
  * @author Gregory
  */
-public class ActivityControls implements Initializable {
+public final class ActivityControls {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   protected Pane pane1;
   @FXML
@@ -18,9 +23,11 @@ public class ActivityControls implements Initializable {
   @FXML
   protected Pane pane3;
 
+  public ActivityControls() {
+  }
+
   @FXML
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  private void initialize() {
   }
 
   @FXML

@@ -24,6 +24,18 @@ String mavenArtifactId = name
 group = mavenGroupId
 version = mavenVersion
 
+task setBuildNumber << {
+  String contents = new File(new File("$projectDir"), 'src/deploy/package/windows/appname.template').getText('UTF-8')
+  contents = contents.replaceAll('BUILDNUMBER', version)
+  new File(new File("$projectDir"), 'src/main/deploy/package/windows/appname.iss').write(contents, 'UTF-8')
+}
+
+task copyRequiredRuntimeConfiguration(type:Sync) {
+  from 'properties'
+  into 'build/additionalResources/properties'
+  include '**/*'
+}
+
 task sourcesJar(type: Jar, dependsOn: classes, description: 'Creates a jar from the source files.') {
   classifier = 'sources'
   from sourceSets.main.allSource

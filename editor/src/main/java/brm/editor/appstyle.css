@@ -44,7 +44,7 @@
   -fx-spacing:8;
 }
 
-// The LabelH1, for headings level 1
+/* The LabelH1, for headings level 1 */
 .LabelH1 {
   -fx-alignment:center;
   -fx-background-color:linear-gradient(black,navy,darkblue,blue,lightblue,lightblue,blue,darkblue,navy,black);
@@ -57,7 +57,7 @@
   -fx-fill:gold;
   -fx-padding:4px;
 }
-// The LabelH2, for headings level 2
+/* The LabelH2, for headings level 2 */
 .LabelH2 {
   -fx-alignment:top-center;
   -fx-background-color:linear-gradient(navy,darkblue,black);
@@ -69,7 +69,7 @@
   -fx-effect:dropshadow(gaussian,black,8,0.5,2,1);
   -fx-fill:gold;
 }
-// The LabelH3, for headings level 3
+/* The LabelH3, for headings level 3 */
 .LabelH3 {
   -fx-alignment:top-center;
   -fx-background-color:linear-gradient(darkblue,blue,navy);
@@ -80,7 +80,7 @@
 .LabelH3 .text {
   -fx-fill:blanchedalmond;
 }
-// The LabelH4, for headings level 4
+/* The LabelH4, for headings level 4 */
 .LabelH4 {
   -fx-background-color:linear-gradient(blue,lightblue,lightgray,white,lightgray,lightblue,blue);
   -fx-padding:2 4 2 2;

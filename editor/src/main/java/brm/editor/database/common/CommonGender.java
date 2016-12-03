@@ -2,7 +2,6 @@ package brm.editor.database.common;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
@@ -10,10 +9,15 @@ import javafx.scene.layout.VBox;
 
 /**
  * FXML Controller class
- *
  * @author Gregory
  */
-public class CommonGender implements Initializable {
+public final class CommonGender {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private VBox vBox;
   @FXML
@@ -31,8 +35,11 @@ public class CommonGender implements Initializable {
   public CommonGender() {
   }
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  @FXML
+  private void initialize() {
+    sexF.setToggleGroup(toggleGroup);
+    sexM.setToggleGroup(toggleGroup);
+    sexN.setToggleGroup(toggleGroup);
     toggleGroup.selectToggle(sexF);
   }
 }

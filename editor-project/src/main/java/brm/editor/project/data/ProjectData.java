@@ -31,7 +31,7 @@ public class ProjectData {
 
   /**
    * A public method to create a project for use in the editor.
-   * <p/>
+   * <p>
    * The following may apply:
    * <ul>
    * <li/>The file parameter must exist or can be created; and the first String parameter must be a path that can be

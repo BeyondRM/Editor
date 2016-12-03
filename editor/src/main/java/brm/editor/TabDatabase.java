@@ -13,13 +13,19 @@ import brm.editor.database.DatabaseVariables;
 import brm.editor.database.DatabaseVehicles;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
 
 
 /**
  * @author Gregory
  */
-public class TabDatabase implements Initializable {
+public final class TabDatabase {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   protected DatabaseAbout about;
   protected DatabaseAnimations animations;
   protected DatabaseAttributes attributes;
@@ -33,8 +39,11 @@ public class TabDatabase implements Initializable {
   protected DatabaseVariables variables;
   protected DatabaseVehicles vehicles;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public TabDatabase() {
+  }
+
+  @FXML
+  private void initialize() {
     about = new DatabaseAbout();
     animations = new DatabaseAnimations();
     attributes = new DatabaseAttributes();

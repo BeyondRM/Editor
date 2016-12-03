@@ -2,7 +2,6 @@ package brm.editor.database;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
@@ -12,13 +11,22 @@ import javafx.scene.control.TextField;
  *
  * @author Gregory
  */
-public class DatabaseClasses implements Initializable {
+public final class DatabaseClasses {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private ListView<String> lvClasses;
   @FXML
   private TextField tfName;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public DatabaseClasses() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

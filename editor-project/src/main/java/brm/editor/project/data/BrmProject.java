@@ -103,7 +103,7 @@ public class BrmProject extends AEditorProject {
   }
 
   /**
-   * A public getter method to obtain the authors list.<p/>
+   * A public getter method to obtain the authors list.<p>
    * In the editor, this is shown as a literal list component, each author on a separate line; in terms of the XML file,
    * the list is put together into one text, with a '|' (vertical-pipe character) so that it can be parsed here.
    * @return A {@link String} object.
@@ -137,7 +137,7 @@ public class BrmProject extends AEditorProject {
   }
 
   /**
-   * A public getter method to obtain the default resolution allowed by the game developer.<p/>
+   * A public getter method to obtain the default resolution allowed by the game developer.<p>
    * Default resolution is the resolution the resulting game will attempt to initialize; if the user's maximum display
    * resolution is smaller than this, the whole screen may be used, otherwise this value is used.
    * @return A {@link String} object.
@@ -147,7 +147,7 @@ public class BrmProject extends AEditorProject {
   }
 
   /**
-   * A public getter method to obtain the maximum resolution allowed by the game developer.<p/>
+   * A public getter method to obtain the maximum resolution allowed by the game developer.<p>
    * Some project art &mdash; title screens and certain background images &mdash; are best viewed at the resolution they
    * were designed to be shown. The developer can use this to specify that the game not run at a larger resolution than
    * what is designed.
@@ -158,7 +158,7 @@ public class BrmProject extends AEditorProject {
   }
 
   /**
-   * A public getter method to obtain the minimum resolution allowed by the game developer.<p/>
+   * A public getter method to obtain the minimum resolution allowed by the game developer.<p>
    * Most games are best viewed when all the on-screen components have space to be displayed; this affects the minimum
    * required resolution, and this
    * @return A {@link String} object.

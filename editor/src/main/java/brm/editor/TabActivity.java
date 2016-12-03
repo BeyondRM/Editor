@@ -5,13 +5,18 @@ import brm.editor.activity.ActivityProjectData;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 
 
 /**
  * @author Gregory
  */
-public class TabActivity implements Initializable {
+public final class TabActivity {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   protected ActivityControls controls;
   @FXML
@@ -19,11 +24,13 @@ public class TabActivity implements Initializable {
   @FXML
   protected ActivityProjectData project;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public TabActivity() {
+  }
+
+  @FXML
+  private void initialize() {
     controls = new ActivityControls();
     hints = new ActivityHelpHints();
     project = new ActivityProjectData();
-    project.initialize(null, null);
   }
 }

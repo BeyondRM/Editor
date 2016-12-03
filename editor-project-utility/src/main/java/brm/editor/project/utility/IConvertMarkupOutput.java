@@ -27,7 +27,7 @@ public interface IConvertMarkupOutput {
 
   /**
    * Whether the markup target exists.
-   * <p/>
+   * <p>
    * Define a method for checking whether the {@link #markupOutputSource markupOutputSource} exists at the location.
    * This is useful for validation, to return if the file reference is merely an abstract filename or does not exist.
    * @return A {@link Boolean} condition.
@@ -36,9 +36,9 @@ public interface IConvertMarkupOutput {
 
   /**
    * Before markup output.
-   * <p/>
+   * <p>
    * Define a methodology to handle what happens before output to a markup target.
-   * <p/>
+   * <p>
    * In general, when performing a conversion from binary source to markup target, you might first perform validation,
    * then set {@link #markupTargetProceed markupTargetProceed} accordingly; this should allow control of whether to
    * continue to the next item to be converted, or interrupt the conversion process.
@@ -47,17 +47,17 @@ public interface IConvertMarkupOutput {
 
   /**
    * During markup output.
-   * <p/>
+   * <p>
    * Define a methodology to handle what happens during output to a markup target.
-   * <p/>
+   * <p>
    */
   abstract public void markupOutputDuring();
 
   /**
    * Finish markup output.
-   * <p/>
+   * <p>
    * Define a methodology to handle what happens after output to a markup target.
-   * <p/>
+   * <p>
    * In general, after the conversion process, not a lot should need to be done; however, any cleanup of objects can and
    * should occur in this method. Validation of the resultant output file can be finished, here.
    */

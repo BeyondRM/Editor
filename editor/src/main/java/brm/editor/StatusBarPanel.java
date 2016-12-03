@@ -1,4 +1,6 @@
 package brm.editor;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
@@ -9,7 +11,13 @@ import javafx.scene.layout.HBox;
  *
  * @author Gregory
  */
-public class StatusBarPanel extends HBox {
+public final class StatusBarPanel extends HBox {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   protected TextField textField1;
   @FXML
@@ -21,7 +29,7 @@ public class StatusBarPanel extends HBox {
   }
 
   @FXML
-  public void initialize() {
+  private void initialize() {
     textField1 = new TextField();
     textField2 = new TextField();
     textField3 = new TextField();

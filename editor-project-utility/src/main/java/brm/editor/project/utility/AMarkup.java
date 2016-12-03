@@ -16,14 +16,14 @@ import org.xml.sax.SAXException;
  * methodology. It is used in reading XML files for their content, and for beginning the parsing of child-nodes. Fields
  * will generally be instantiated in the constructor, via the following order:
  * <ol>
- * <li/>{@link #xmldoc xmldoc} &mdash; the file reference equating to where the XML document is located, physically.
- * <li/>{@link #builder builder} &mdash; the document builder object, which is used to "parse" the XML File object.
- * <li/>{@link #document document} &mdash; the resulting document object which has been parsed by Java and can also be
+ * <li>{@link #xmldoc xmldoc} &mdash; the file reference equating to where the XML document is located, physically.
+ * <li>{@link #builder builder} &mdash; the document builder object, which is used to "parse" the XML File object.
+ * <li>{@link #document document} &mdash; the resulting document object which has been parsed by Java and can also be
  * parsed by this class and its implementers.
- * <li/>{@link #rootnodeNode rootnodeNode} &mdash; the root document node, for beginning the implementation parsing.
- * <li/>{@link #rootnodeName rootnodeName} &mdash; the root node's name;
- * <li/>{@link #attributes attributes} &mdash; a list of attribute nodes in the root node of the XML document.
- * <li/>{@link #nodeList nodeList} &mdash; the list of child-nodes obtainable from the root document node.
+ * <li>{@link #rootnodeNode rootnodeNode} &mdash; the root document node, for beginning the implementation parsing.
+ * <li>{@link #rootnodeName rootnodeName} &mdash; the root node's name;
+ * <li>{@link #attributes attributes} &mdash; a list of attribute nodes in the root node of the XML document.
+ * <li>{@link #nodeList nodeList} &mdash; the list of child-nodes obtainable from the root document node.
  * </ol>
  * If things have worked correctly, none of the above should be null, or have empty values; the value of boolean field
  * {@link #loadedSafely loadedSafely} is the direct result of checking these things, at the end of the constructor.
@@ -54,9 +54,9 @@ abstract public class AMarkup {
   protected DocumentBuilder builder;
   /**
    * The attributes mapping.
-   * <p/>
+   * <p>
    * The element's attributes list in the document's root node, if any exist; null otherwise.
-   * <p/>
+   * <p>
    * This is set in the {@link #parseNodes(String) parseNodes(String)} method, so each implementing class must set this.
    * @see AMarkup
    */
@@ -68,9 +68,9 @@ abstract public class AMarkup {
   protected Node rootnodeNode;
   /**
    * The node list.
-   * <p/>
+   * <p>
    * These are all the child nodes of the document root node.
-   * <p/>
+   * <p>
    * This is set in the {@link #parseNodes(String) parseNodes(String)} method, so each implementing class must set this.
    * @see AMarkup
    */
@@ -84,18 +84,18 @@ abstract public class AMarkup {
   /**
    * A public constructor. This is used to instantiate the (XML) markup document, via the following code:
    * <pre>
-   *     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-   *     builder = factory.newDocumentBuilder();
-   *     document = builder.parse(xmldoc);
-   *     document.normalize();
-   *     rootnodeNode = document.getDocumentElement();
-   *     rootnodeName = rootnodeNode.getNodeName();
-   *     attributes = rootnodeNode.getAttributes();
-   *     nodeList = rootnodeNode.getChildNodes();
-   * </pre> and finally, if no exceptions were thrown:
+   *    xmldoc = f;
+   *    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+   *    builder = factory.newDocumentBuilder();
+   *    document = builder.parse(xmldoc);
+   *    document.normalize();
+   *    rootnodeNode = document.getDocumentElement();
+   *    rootnodeName = rootnodeNode.getNodeName();
+   *    attributes = rootnodeNode.getAttributes();
+   *    nodeList = rootnodeNode.getChildNodes();</pre>
+   * and finally, if no exceptions were thrown:
    * <pre>
-   *     loadedSafely = document != null && document.getDocumentElement() != null;
-   * </pre>
+   *    loadedSafely = document != null && document.getDocumentElement() != null;</pre>
    * @param f
    * @param s
    * @throws ParserConfigurationException cannot create builder from factory instance.

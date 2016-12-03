@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -20,7 +19,13 @@ import javafx.scene.layout.VBox;
  *
  * @author Gregory
  */
-public class TemplateItemSubtypeListController implements Initializable {
+public final class TemplateItemSubtypeListController {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private AnchorPane anchorPane;
   @FXML
@@ -49,8 +54,11 @@ public class TemplateItemSubtypeListController implements Initializable {
   private String baseName;
   private boolean changed;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public TemplateItemSubtypeListController() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 
   @FXML

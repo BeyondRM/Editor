@@ -13,19 +13,19 @@ public interface IConvertValidation {
 
   /**
    * Define a methodology to handle what happens before validation of project data.
-   * <p/>
+   * <p>
    */
   abstract public void validateBefore();
 
   /**
    * Define a methodology to handle what happens during validation of project data.
-   * <p/>
+   * <p>
    */
   abstract public void validateDuring();
 
   /**
    * Define a methodology to handle what happens after validation of project data.
-   * <p/>
+   * <p>
    */
   abstract public void validateFinish();
 }

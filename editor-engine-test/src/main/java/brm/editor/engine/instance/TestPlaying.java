@@ -8,7 +8,7 @@ package brm.editor.engine.instance;
 public class TestPlaying extends InstanceTest {
   /**
    * A public constructor.
-   * <p/>
+   * <p>
    * This calls a new instance of the game engine, to play the game as if it was already a released game.
    */
   public TestPlaying() {

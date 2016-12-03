@@ -2,21 +2,28 @@ package brm.editor.database.common;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.layout.Region;
 
 
 /**
  * FXML Controller class
- *
  * @author Gregory
  */
-public class CommonBaseStat implements Initializable {
+public final class CommonBaseStat {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private Region region;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public CommonBaseStat() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 
   public void draw() {

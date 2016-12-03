@@ -1,7 +1,7 @@
 package brm.editor.database.events;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
 
 
 /**
@@ -9,8 +9,18 @@ import javafx.fxml.Initializable;
  *
  * @author Gregory
  */
-public class EventButtons implements Initializable {
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+public final class EventButtons {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
+
+  public EventButtons() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

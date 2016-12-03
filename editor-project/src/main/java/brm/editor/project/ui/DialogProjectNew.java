@@ -4,7 +4,6 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -16,7 +15,13 @@ import javafx.stage.Stage;
  *
  * @author Gregory
  */
-public class DialogProjectNew implements Initializable {
+public final class DialogProjectNew {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private Button buttonAccept;// the button used to open the file-selector to get an existing file directory.
   @FXML
@@ -50,19 +55,22 @@ public class DialogProjectNew implements Initializable {
   private String gamePath;
   /**
    * A boolean condition representing if the user has changed the game project name to be different from the game path.
-   * This prevents the obviously undesired instance of losing an altered game name.<p/>
+   * This prevents the obviously undesired instance of losing an altered game name.<p>
    * Generally, the user will follow the flow of the dialog: first, selecting the root path (if so desired); and second,
    * typing the project path &mdash; which should also set the {@link #gameName game name} to be the same. However, if
    * the user goes to the third text field and specifies a longer or more accurate game title, and then goes back to the
-   * {@link #tfGamePath game path} text field, this more accurate game name would be lost.<p/>
+   * {@link #tfGamePath game path} text field, this more accurate game name would be lost.<p>
    * Thus, the reason for this field; it is {@code false} by default, and only set to {@code true} if the actual
    * {@link #gameName game name} is altered. Should the user desire to change the {@link #tfGamePath game path} again,
    * at least the set {@link #tfGameName game name} would not be altered.
    */
   private boolean nameChange = false;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public DialogProjectNew() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 
   @FXML

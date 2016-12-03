@@ -1,7 +1,7 @@
 package brm.editor.database.items;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
 
 
 /**
@@ -9,9 +9,18 @@ import javafx.fxml.Initializable;
  *
  * @author Gregory
  */
-public class CommonItemAbstract implements Initializable {
+public final class CommonItemAbstract {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public CommonItemAbstract() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

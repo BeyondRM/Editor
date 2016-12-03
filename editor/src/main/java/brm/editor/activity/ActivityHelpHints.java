@@ -2,7 +2,6 @@ package brm.editor.activity;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.web.WebView;
 
 
@@ -10,11 +9,20 @@ import javafx.scene.web.WebView;
  * FXML Controller class
  * @author Gregory
  */
-public class ActivityHelpHints implements Initializable {
+public final class ActivityHelpHints {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private WebView webView;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public ActivityHelpHints() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

@@ -3,7 +3,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -13,7 +12,13 @@ import javafx.scene.control.ScrollPane;
 /**
  * @author Gregory
  */
-public class TileSelectorCanvas implements Initializable {
+public final class TileSelectorCanvas {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   private Canvas canvas;
   @FXML
@@ -27,8 +32,11 @@ public class TileSelectorCanvas implements Initializable {
   @FXML
   private ScrollPane scrollPane;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public TileSelectorCanvas() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 
   @FXML
@@ -42,5 +50,4 @@ public class TileSelectorCanvas implements Initializable {
   @FXML
   public void onChangeTilesheet(ActionEvent ae) {
   }
-
 }

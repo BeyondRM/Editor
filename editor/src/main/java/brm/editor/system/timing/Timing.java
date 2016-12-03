@@ -1,16 +1,25 @@
 package brm.editor.system.timing;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
 
 
 /**
  * FXML Controller class
  * @author Gregory
  */
-public class Timing implements Initializable {
+public class Timing {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public Timing() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

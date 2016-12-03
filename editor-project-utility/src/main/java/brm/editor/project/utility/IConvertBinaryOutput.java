@@ -12,21 +12,21 @@ package brm.editor.project.utility;
 public interface IConvertBinaryOutput {
   /**
    * Before binary output.
-   * <p/>
+   * <p>
    * Define a methodology to handle what happens before output to a binary target.
    */
   abstract public void binaryOutputBefore();
 
   /**
    * During binary output.
-   * <p/>
+   * <p>
    * Define a methodology to handle what happens during output to a binary target.
    */
   abstract public void binaryOutputDuring();
 
   /**
    * Finish binary output.
-   * <p/>
+   * <p>
    * Define a methodology to handle what happens after output to a binary target.
    */
   abstract public void binaryOutputFinish();

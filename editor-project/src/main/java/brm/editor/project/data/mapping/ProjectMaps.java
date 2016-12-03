@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * The Project Maps. This class handles the list of maps within the project; it allows adding new maps via a dialog.
- * <p/>
+ * <p>
  * Maps each have their own properties, so this class will only deal with the meta-mapping attributes.
  * @author Gregory
  */
@@ -24,7 +24,7 @@ public class ProjectMaps {
   /**
    * The public list of maps. This is a {@link List} of individual maps in an array-type list field; maps can be added
    * or removed from it, as well as other methods.
-   * <p/>
+   * <p>
    * TODO: Do we always need to create at least one map, even if no project is open?
    * @see ProjectMaps
    */

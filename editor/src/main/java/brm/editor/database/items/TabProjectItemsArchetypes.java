@@ -2,7 +2,6 @@ package brm.editor.database.items;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 
 
 /**
@@ -10,7 +9,13 @@ import javafx.fxml.Initializable;
  *
  * @author Gregory
  */
-public class TabProjectItemsArchetypes implements Initializable {
+public final class TabProjectItemsArchetypes {
+  // special auto-injected values:
+  @FXML
+  private URL location;
+  @FXML
+  private ResourceBundle resources;
+  // Other FXML components/fields
   @FXML
   protected TemplateItemSubtypeListController tisl0;
   @FXML
@@ -24,7 +29,10 @@ public class TabProjectItemsArchetypes implements Initializable {
   @FXML
   protected TemplateItemSubtypeListController tisl5;
 
-  @Override
-  public void initialize(URL url, ResourceBundle rb) {
+  public TabProjectItemsArchetypes() {
+  }
+
+  @FXML
+  private void initialize() {
   }
 }

@@ -1,0 +1,100 @@
+//
+buildscript {
+  dependencies {
+    classpath 'de.dynamicfiles.projects.gradle.plugins:javafx-gradle-plugin:8.6.0'
+  }
+  repositories {
+    mavenLocal()
+    mavenCentral()
+  }
+}
+
+apply plugin: 'java'
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+}
+
+dependencies{
+  // this dependency is only required when using UserJvmOptionsService when using Oracle JDK
+  //compile files("${System.properties['java.home']}/../lib/packager.jar")
+  // when using OpenJFX (Ubuntu), please adjust accordingly
+  //compile files("/usr/share/java/openjfx/lib/packager.jar")
+}
+
+apply plugin: 'javafx-gradle-plugin'
+
+// these values are the examples and defaults; you won't need them all
+
+// configure javafx-gradle-plugin
+jfx {
+  verbose = true
+  mainClass = "beyondrm.editor.Application"
+  jfxAppOutputDir = "build/jfx/app"
+  jfxMainAppJarName = "project-jfx.jar"
+  deployDir = "src/main/deploy"
+  useEnvironmentRelativeExecutables = true
+
+  // gradle jfxJar
+  css2bin = false
+  preLoader = null // String
+  updateExistingJar = false
+  allPermissions = false
+  manifestAttributes = null // Map<String, String>
+  addPackagerJar = true
+
+  // gradle jfxNative
+  identifier = null  // String - setting this for windows-bundlers makes it possible to generate upgradeable installers (using same GUID)
+  vendor = "some serious business corp."
+  nativeOutputDir = "build/jfx/native"
+  bundler = "ALL" // set this to some specific, if your don't want all bundlers running, examples "windows.app", "jnlp", ...
+  jvmProperties = null // Map<String, String>
+  jvmArgs = null // List<String>
+  userJvmArgs = null // Map<String, String>
+  launcherArguments = null // List<String>
+  nativeReleaseVersion = "1.0"
+  needShortcut = false
+  needMenu = false
+  bundleArguments = [
+    // dont bundle JRE (not recommended, but increases build-size/-speed)
+    runtime: null
+  ]
+  appName = "project" // this is used for files below "src/main/deploy", e.g. "src/main/deploy/windows/project.ico"
+  additionalAppResources = null // path to some additional resources when creating application-bundle
+  secondaryLaunchers = [[appName:"somethingDifferent"], [appName:"somethingDifferent2"]]
+  fileAssociations = null // List<Map<String, Object>>
+  noBlobSigning = false // when using bundler "jnlp", you can choose to NOT use blob signing
+  customBundlers = null // List<String>
+  skipNativeLauncherWorkaround205 = false
+
+  skipNativeLauncherWorkaround124 = false
+  skipNativeLauncherWorkaround167 = false
+  skipJNLPRessourcePathWorkaround182 = false
+  skipSigningJarFilesJNLP185 = false
+  skipSizeRecalculationForJNLP185 = false
+
+  // gradle jfxRun
+  runJavaParameter = null // String
+  runAppParameter = null // String
+
+  // per default the outcome of the gradle "jarTask" will be used, set this to specify otherwise (like proguard-output)
+  alternativePathToJarFile = null // String
+
+  // to disable patching of ant-javafx.jar, set this to false
+  usePatchedJFXAntLib = true
+
+  // gradle jfxGenerateKeyStore
+  keyStore = "src/main/deploy/keystore.jks"
+  keyStoreAlias = "myalias"
+  keyStorePassword = "password"
+  keyPassword = null // will default to keyStorePassword
+  keyStoreType = "jks"
+  overwriteKeyStore = false
+
+  certDomain = null // required
+  certOrgUnit = null // defaults to "none"
+  certOrg = null // required
+  certState = null // required
+  certCountry = null // required
+}
