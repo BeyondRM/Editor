@@ -1,4 +1,0 @@
-//
-dependencies {
-  compile project(':editor-project-utility')
-}
